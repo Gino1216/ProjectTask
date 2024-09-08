@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảo Vệ Trẻ Em Việt Nam</title>
+    <link rel="stylesheet" href="CSS/style.css"> <!-- Liên kết đến file CSS -->
+</head>
+
+<body>
+    <div class="header">
+        <!-- Logo and network name -->
+        <div class="logo">
+            <!-- <img src="img/banner-safe-spaces-for-kids-02.jpg" class="logo2" alt="Bảo Vệ Trẻ Em"> -->
+            <!-- <div class="social-links">
+                <a href="#"><img src="img/youtube-logo-grey.png" alt="YouTube"></a>
+                <a href="#"><img src="img/facebook-logo-grey.png" alt="Facebook"></a>
+            </div> -->
+        </div>
+
+        <!-- Search bar and login button -->
+        <div class="search-login">
+            <input type="text" class="search-bar" placeholder="Search">
+            <button class="login-button">Đăng nhập</button>
+        </div>
+    </div>
+
+    <!-- Menu Toggle Button for mobile -->
+    <div class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="nav">
+        <div class="nav-links">
+            <a href="#">TRANG CHỦ</a>
+            <a href="#">MẠNG LƯỚI</a>
+            <a href="#">TÀI LIỆU</a>
+            <a href="#">HỎI ĐÁP</a>
+            <a href="#">BÀY TỎ NGUYỆN VỌNG</a>
+            <a href="#">TIN TỨC SỰ KIỆN</a>
+            <a href="#">KIỂM TRA</a>
+            <a href="#" class="report-button">Báo cáo xâm hại</a>
+        </div>
+    </div>
+    <!-- Banner -->
+    <div class="banner-container">
+        <div class="banner-images">
+            <img src="img/article.jpg" class="banner-img" alt="Banner 1">
+            <img src="img/sddefault.jpg" class="banner-img" alt="Banner 3">
+        </div>
+    </div>
+
+    <script>
+        let currentIndex = 0;
+        const images = document.querySelectorAll('.banner-img');
+        const imageCount = images.length;
+
+        function showNextImage() {
+            images[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex + 1) % imageCount;
+            images[currentIndex].classList.add('active');
+        }
+
+        images[currentIndex].classList.add('active');
+
+        setInterval(showNextImage, 1000);
+
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('show');
+        }
+    </script>
+</body>
+
+</html>
