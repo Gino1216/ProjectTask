@@ -837,3 +837,25 @@ height: 65vh;
     background-color:rgb(146, 146, 146);
     color: #ddd;
 }
+
+.language-switch {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.search,
+.language-switch {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu-toggle {
+    margin-right: auto;
+}
