@@ -377,6 +377,64 @@ footer {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     /* Tăng đổ bóng khi hover */
 }
+/* Media Queries cho các thiết bị di động */
+@media (max-width: 768px) {
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; /* Tránh tràn ngang */
+    }
+
+    /* Điều chỉnh phần tử bao quát trang */
+    .container {
+        width: 100%;
+        padding: 0 10px; /* Thêm khoảng cách ở hai bên */
+        box-sizing: border-box;
+    }
+
+    /* Điều chỉnh tiêu đề */
+    h1, h2, h3 {
+        text-align: center; /* Căn giữa tiêu đề */
+        font-size: 1.5em; /* Điều chỉnh kích thước chữ tiêu đề */
+        margin: 10px 0;
+    }
+
+    /* Điều chỉnh các phần chứa nội dung */
+    .content-section {
+        width: 100%;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    /* Điều chỉnh ảnh */
+    img {
+        max-width: 100%;
+        height: auto; /* Đảm bảo ảnh không bị méo */
+        display: block;
+        margin: 0 auto; /* Căn giữa hình ảnh */
+    }
+
+    /* Điều chỉnh video */
+    video {
+        width: 100%;
+        height: auto;
+        object-fit: cover; /* Video sẽ không bị biến dạng */
+    }
+
+    /* Điều chỉnh menu hoặc các phần tử khác */
+    nav {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    /* Điều chỉnh button hoặc các phần tử khác */
+    button {
+        width: 100%;
+        padding: 10px;
+        font-size: 1em;
+    }
+}
 
 
 
@@ -486,6 +544,47 @@ footer {
 .video-section {
     position: relative;
 }
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+    .footer-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-column {
+        flex: none;
+    }
+}
+
+/* Chuyển diện thoại */
+@media (max-width: 768px) {
+    .video-section {
+        width: 100%;
+        padding: 0 10px; /* Thêm khoảng cách xung quanh để video không bị cắt */
+        box-sizing: border-box; /* Đảm bảo padding không làm tăng chiều rộng của phần tử */
+    }
+
+    .video-section video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
 
 .video-section1 {
     display: flex;
