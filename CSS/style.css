@@ -837,8 +837,18 @@ height: 65vh;
     background-color:rgb(146, 146, 146);
     color: #ddd;
 }
+.anhchinh{
+    background-image: url(https://img.freepik.com/premium-photo/group-children-with-their-arms-around-each-other-circle_998240-1478.jpg?w=1060);
+    background-repeat: none;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    clip-path: inset(20px 0 20px 0);
 
-.language-switch {
+
+.language-switch{
     display: flex;
     gap: 10px;
     align-items: center;
@@ -858,4 +868,5 @@ height: 65vh;
 
 .menu-toggle {
     margin-right: auto;
+
 }
