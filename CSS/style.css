@@ -6,15 +6,14 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    line-height: 1.6;
     color: #333;
+    overflow-x: hidden;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
 }
 
 .logo {
@@ -773,4 +772,90 @@ footer {
         width: 55px;
         margin-left: 0;
     }
+}
+.aboutus{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    border-radius: 20px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+.img_about{
+    background-image: url(https://img.freepik.com/free-photo/close-up-smiley-kids-posing-together_23-2149199832.jpg?t=st=1726754011~exp=1726757611~hmac=6aad46ca58ac6762f3b37ea2ecbf8dd162e73cc34620f549076baa891123622a&w=900);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-image: 10px ;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+   width: 80%;
+   padding: 50px;
+    background-image: 
+    linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),
+    url(https://img.freepik.com/free-photo/close-up-smiley-kids-posing-together_23-2149199832.jpg?t=st=1726754011~exp=1726757611~hmac=6aad46ca58ac6762f3b37ea2ecbf8dd162e73cc34620f549076baa891123622a&w=900);
+background-repeat: no-repeat;
+background-size: cover;
+height: 65vh;
+}
+.vande{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    border-radius: 20px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    margin-bottom: 3cm;
+}
+.menuvande{
+    display: flex;
+    flex-direction: row;
+ width: 95%;
+    gap: 10px;
+    max-height: 40vh;
+}
+.menuvande div
+{
+    flex: 1;
+    overflow: hidden;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 20px;
+    transition: 0.5s ease-in-out;
+    background-color:rgb(146, 146, 146);
+}
+.menuvande div:hover{
+    height:57vh ;
+    flex: 3;
+    transform: scale(1.1); /* Phóng to nút */
+    background-color:rgb(146, 146, 146);
+    color: #ddd;
+}
+
+.language-switch {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.search,
+.language-switch {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu-toggle {
+    margin-right: auto;
 }
