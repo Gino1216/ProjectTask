@@ -157,12 +157,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-<<<<<<< Updated upstream
     width: 1000px;
     height: auto;
-=======
-    height: 500px;
->>>>>>> Stashed changes
     /* Bạn có thể điều chỉnh chiều cao theo nhu cầu */
     margin-top: 20px;
     background-color: #f0f0f0;
@@ -341,10 +337,7 @@ footer {
     align-items: flex-start;
     /* Căn chỉnh các phần tử nội dung theo chiều dọc từ trên xuống dưới */
     width: 100%;
-<<<<<<< Updated upstream
     height: auto;
-=======
->>>>>>> Stashed changes
 }
 
 .text-block {
@@ -490,7 +483,6 @@ footer {
     }
 }
 
-<<<<<<< Updated upstream
 .video-section {
     position: relative;
 }
@@ -558,56 +550,6 @@ footer {
     position: relative;
 }
 
-=======
-/* Menu Toggle Style */
-.menu-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.menu-toggle .bar {
-    width: 15px;
-    height: 1px;
-    background-color: #333;
-    margin: 4px;
-    transition: 0.3s;
-}
-
-/* Hiển thị menu toggle trên thiết bị di động */
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: flex;
-    }
-
-    #nav-menu {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: #fff;
-    }
-
-    #nav-menu.active {
-        display: flex;
-    }
-
-    nav ul {
-        display: flex;
-        flex-direction: column;
-    }
-
-    nav ul li a {
-        padding: 15px;
-        border-bottom: 1px solid #ddd;
-    }
-}
-
-/* Cấu hình cho thanh tìm kiếm */
-.search {
-    position: relative;
-}
-
->>>>>>> Stashed changes
 /* Tạo kiểu cho thanh tìm kiếm */
 .search form {
     display: flex;
