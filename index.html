@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
 <head>
     <meta charset="UTF-8">
@@ -11,9 +11,10 @@
     <link rel="stylesheet" href="CSS/cssResponsive.css">
     <link rel="stylesheet" href="CSS/style.css">
     <script src="CSS/js.js"></script>
+    <script src="CSS/language.js"></script>
+    <script src="CSS/java.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-
 <body>
     <header>
         <div class="logo"></div>
@@ -24,147 +25,173 @@
                 <span class="bar"></span>
             </div>
             <ul id="nav-menu">
-                <li><a href="#">Trang Chủ</a></li>
-                <li><a href="#">Về Chúng Tôi</a></li>
-                <li><a href="#">Hoạt Động</a></li>
-                <li><a href="#">Nghiên Cứu</a></li>
+                <li><a href="#" data-key="home">Trang Chủ</a></li>
+                <li><a href="#" data-key="about_us">Về Chúng Tôi</a></li>
+                <li><a href="#" data-key="activities">Hoạt Động</a></li>
+                <li><a href="#" data-key="research">Nghiên Cứu</a></li>
                 <li class="search">
                     <form action="#" method="get">
-                        <div class="search-box">
-                            <input type="text" placeholder="Tìm kiếm..." name="search">
-                            <button type="submit"><i class="fas fa-search"></i></button>
-                        </div>
+                        <input type="text" placeholder="Tìm kiếm..." name="search">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+
                     </form>
                 </li>
+                <!-- Nút chuyển đổi ngôn ngữ
+                <li class="language-switch">
+                    <button onclick="changeLanguage('vi')" data-key="language_switch.vi">Tiếng Việt</button>
+                    <button onclick="changeLanguage('en')" data-key="language_switch.en">English</button>
+                </li> -->
             </ul>
         </nav>
     </header>
-    <section class="anhchinh">
-    </section>
-
-
 
     <section class="main">
         <div class="content">
-            <h1>Hội Fan Jack</h1>
+            <h1 data-key="title">Hội Fan Jack</h1>
             <p>Chúng tôi cam kết bảo vệ quyền lợi và sự an toàn của trẻ em, nhằm đảm bảo mỗi đứa trẻ đều có một môi
                 trường phát triển lành mạnh và hạnh phúc. Sứ mệnh của chúng tôi là nâng cao nhận thức về các vấn đề mà
                 trẻ em đang đối mặt, đồng thời cung cấp sự hỗ trợ cần thiết để bảo vệ các em khỏi mọi hình thức bạo lực
                 và lạm dụng.</p>
             <div class="buttons">
-                <a href="#" class="btn primary">Login</a>
-                <a href="#" class="btn secondary">Reglogin</a>
+                <a href="#" class="btn primary">Đăng Nhập</a>
+                <a href="#" class="btn secondary">Đăng Ký</a>
             </div>
         </div>
         <div class="image">
             <img src="img/C55A9951.jpg.jpg" alt="Hình ảnh kiến trúc liên quan đến Jack">
         </div>
     </section>
-    <br><br><br><br><br><br>
-   
-   
-   
+
+
+
     <div style="display: flex;justify-content: center;">
-    <section class="aboutus">
-        <div>Về Chúng Tôi</div>
-<div class="img_about">
-    Bắt đầu từ những vấn đề trong xã hội vì thế, chúng tôi cùng với chuyên gia tâm lý, xã hội học, giáo dục và pháp luật, những người có tâm huyết và kinh nghiệm trong việc 
-    bảo vệ trẻ em đã phát triển thành một tổ chức lớn mạnh với nhiều dự án và chương trình bảo vệ trẻ em trên khắp cả nước.Qua các năm Chúng tôi không ngừng nỗ lực để nâng 
-    cao nhận thức của cộng đồng, cung cấp tài nguyên và hỗ trợ cần thiết cho các gia đình, trẻ em, và các tổ chức liên quan nhằm ngăn chặn và xử lý các tình huống xâm hại và 
-    bạo lực đối với trẻ em từ đó tạo ra một cộng đồng bảo vệ  trẻ em lớn mạnh
-</div>
-    </section>
-</div>
-<div style="display: flex;justify-content: center;">
-<section class="vande">
- <div>  vấn đề</div> 
- <div class="menuvande">
-    <div><h1>Bạo lực và xâm hại trẻ em:</h1>
-        Bạo lực gia đình: Trẻ em có thể trở thành nạn nhân của bạo lực trong 
-        gia đình từ cha mẹ, người thân hoặc người chăm sóc. Đây là một vấn đề 
-        nghiêm trọng ảnh hưởng đến sức khỏe tinh thần và thể chất của trẻ.
-        Xâm hại tình dục: Đây là một trong những vấn đề đáng lo ngại, với nhiều
-         vụ việc liên quan đến xâm hại tình dục trẻ em được báo cáo, nhưng vẫn còn 
-         rất nhiều trường hợp không được phát hiện hoặc báo cáo.
+        <section class="aboutus">
+            <div>Về Chúng Tôi</div>
+            <div class="img_about">
+                Bắt đầu từ những vấn đề trong xã hội vì thế, chúng tôi cùng với chuyên gia tâm lý, xã hội học, giáo dục
+                và pháp luật, những người có tâm huyết và kinh nghiệm trong việc
+                bảo vệ trẻ em đã phát triển thành một tổ chức lớn mạnh với nhiều dự án và chương trình bảo vệ trẻ em
+                trên khắp cả nước.Qua các năm Chúng tôi không ngừng nỗ lực để nâng
+                cao nhận thức của cộng đồng, cung cấp tài nguyên và hỗ trợ cần thiết cho các gia đình, trẻ em, và các tổ
+                chức liên quan nhằm ngăn chặn và xử lý các tình huống xâm hại và
+                bạo lực đối với trẻ em từ đó tạo ra một cộng đồng bảo vệ trẻ em lớn mạnh
+            </div>
+        </section>
     </div>
-    <div><h1>Lao động trẻ em:</h1>
-        Nhiều trẻ em, đặc biệt ở các vùng nông thôn và khu vực nghèo, phải làm việc
-         sớm để phụ giúp gia đình. Việc này có thể khiến trẻ em không được học hành 
-         đầy đủ và phải đối mặt với các điều kiện làm việc không an toàn.</div>
-    <div><h1>Nạn buôn bán và bắt cóc trẻ em:</h1>
-        Tình trạng buôn bán trẻ em, bắt cóc trẻ em để bán ra nước ngoài hoặc phục vụ 
-        các mục đích khác như mại dâm, lao động cưỡng bức, xin ăn… là một vấn đề nhức nhối.</div>
-    <div><h1>Bạo lực học đường và bắt nạt trực tuyến:</h1>
-        Bạo lực học đường và bắt nạt trên mạng xã hội đang gia tăng, gây ra áp lực tâm lý 
-        và các vấn đề tâm thần cho trẻ em. Trẻ em có thể bị cô lập, sợ hãi và mất tự tin.</div>
-        <div><h1>sử dụng internet và các nội dung không phù hợp:</h1>
-            Trẻ em ngày càng tiếp cận nhiều hơn với internet, và điều này đi kèm với nguy
-             cơ tiếp xúc với các nội dung không phù hợp hoặc nguy hiểm như bạo lực, khiêu 
-             dâm, lừa đảo…</div>
-        <div><h1>Sự thiếu tiếp cận với giáo dục và chăm sóc y tế: </h1>
-            Trẻ em ở các vùng sâu, vùng xa, vùng dân tộc thiểu số thường gặp khó khăn trong
-             việc tiếp cận với giáo dục và các dịch vụ y tế cơ bản, ảnh hưởng đến sự phát triển
-              toàn diện.</div>
- </div>
-</section>
-   </div>
+    <div style="display: flex;justify-content: center;">
+        <section class="vande">
+            <div> Vấn Đề</div>
+            <div class="menuvande">
+                <div>
+                    <h1>Bạo lực và xâm hại trẻ em:</h1>
+                    Bạo lực gia đình: Trẻ em có thể trở thành nạn nhân của bạo lực trong
+                    gia đình từ cha mẹ, người thân hoặc người chăm sóc. Đây là một vấn đề
+                    nghiêm trọng ảnh hưởng đến sức khỏe tinh thần và thể chất của trẻ.
+                    Xâm hại tình dục: Đây là một trong những vấn đề đáng lo ngại, với nhiều
+                    vụ việc liên quan đến xâm hại tình dục trẻ em được báo cáo, nhưng vẫn còn
+                    rất nhiều trường hợp không được phát hiện hoặc báo cáo.
+                </div>
+                <div>
+                    <h1>Lao động trẻ em:</h1>
+                    Nhiều trẻ em, đặc biệt ở các vùng nông thôn và khu vực nghèo, phải làm việc
+                    sớm để phụ giúp gia đình. Việc này có thể khiến trẻ em không được học hành
+                    đầy đủ và phải đối mặt với các điều kiện làm việc không an toàn.
+                </div>
+                <div>
+                    <h1>Nạn buôn bán và bắt cóc trẻ em:</h1>
+                    Tình trạng buôn bán trẻ em, bắt cóc trẻ em để bán ra nước ngoài hoặc phục vụ
+                    các mục đích khác như mại dâm, lao động cưỡng bức, xin ăn… là một vấn đề nhức nhối.
+                </div>
+                <div>
+                    <h1>Bạo lực học đường và bắt nạt trực tuyến:</h1>
+                    Bạo lực học đường và bắt nạt trên mạng xã hội đang gia tăng, gây ra áp lực tâm lý
+                    và các vấn đề tâm thần cho trẻ em. Trẻ em có thể bị cô lập, sợ hãi và mất tự tin.
+                </div>
+                <div>
+                    <h1>sử dụng internet và các nội dung không phù hợp:</h1>
+                    Trẻ em ngày càng tiếp cận nhiều hơn với internet, và điều này đi kèm với nguy
+                    cơ tiếp xúc với các nội dung không phù hợp hoặc nguy hiểm như bạo lực, khiêu
+                    dâm, lừa đảo…
+                </div>
+                <div>
+                    <h1>Sự thiếu tiếp cận với giáo dục và chăm sóc y tế: </h1>
+                    Trẻ em ở các vùng sâu, vùng xa, vùng dân tộc thiểu số thường gặp khó khăn trong
+                    việc tiếp cận với giáo dục và các dịch vụ y tế cơ bản, ảnh hưởng đến sự phát triển
+                    toàn diện.
+                </div>
+            </div>
+        </section>
+    </div>
 
 
 
 
-<section class="content2">
-        <h2>Chúng Tôi Tin Rằng</h2>
+    <section class="content2">
+        <h2 data-key="support_activities">Chúng Tôi Tin Rằng</h2>
         <p>Tất cả trẻ em đều có quyền sống, phát triển và phát huy hết tiềm năng của mình - vì lợi ích của một thế giới
             tốt đẹp hơn</p>
         <section class="video-section">
-            <video src="C:\Users\Admin\Documents\GitHub\ProjectTask\img\taihienhivong.mp4" autoplay loop muted playsinline></video>
+            <video src="/Project/img/Taihienhivong.mp4" autoplay loop muted playsinline></video>
         </section>
     </section>
-    <br><br><br><br><br><br>
+
+    <section class="image-section">
+        <div class="image-grid">
+            <div class="image-block">
+                <img src="https://haycafe.vn/wp-content/uploads/2022/01/hinh-anh-tre-em-ngheo-nhung-dep-cua-em-be-vung-cao.jpg" alt="Kiến trúc 1">
+                <h3>Vì nụ cười</h3>
+                <p>Nụ cười của các em nhỏ là biểu tượng của sự hồn nhiên và hạnh phúc, điều đó xứng đáng được bảo vệ bằng tất cả những gì chúng ta có. Đây không chỉ là niềm vui trong khoảnh khắc mà còn là tương lai của một thế hệ. Đằng sau mỗi nụ cười ấy là niềm hy vọng cho một thế giới tốt đẹp hơn, nơi mà các em được lớn lên trong sự an lành, tình yêu thương và sự che chở.</p>
+            </div>
+            <div class="image-block">
+                <img src="https://afamilycdn.com/150157425591193600/2022/9/28/photo-1-16643394346552066104955-1664346604282-16643466048571193584106.jpg" alt="Kiến trúc 2">
+                <h3>Vì tương lai</h3>
+                <p>Vì tương lai của những đứa trẻ này, chúng ta cần đặt mọi nỗ lực vào việc tạo dựng một thế giới mà các em có thể phát triển toàn diện, hạnh phúc và an toàn. Mỗi đứa trẻ hôm nay chính là tương lai của ngày mai, và cách chúng ta đối xử với các em sẽ định hình thế giới sau này.</p>
+            </div>
+            <div class="image-block">
+                <img src="https://cdn.pixabay.com/photo/2021/05/10/08/06/child-6242849_640.jpg" alt="Kiến trúc 3">
+                <h3>vì cuộc sống</h3>
+                <p>Vì cuộc sống của các em, chúng ta phải luôn đặt sự quan tâm và bảo vệ lên hàng đầu. Cuộc sống của trẻ em không chỉ đơn thuần là những năm tháng tuổi thơ, mà đó là giai đoạn quan trọng nhất để hình thành nhân cách, sức khỏe và tương lai của cả một đời người. Trẻ em xứng đáng được sống trong môi trường an toàn, lành mạnh, và tràn ngập tình yêu thương.</p>
+            </div>
+        </div>
+    </section>
     <!-- phần code hỗ trợ -->
     <section class="split-section">
         <div class="content-block">
             <div class="text-block">
                 <h2>Hoạt Động Hỗ Trợ Các Em Nhỏ</h2>
-                <p>Mỗi bữa, các bé sẽ được ăn thịt, đậu, canh, rau với giá 8,500đ/suất, gạo địa phương, gia đình đối ứng
-                    ( 1 tuần ăn 4 bữa do chiều T6 nghỉ thầy cô giáo về trường chính giao ban)&nbsp; Nếu mầm non ăn 5 bữa
-                    thì mỗi bữa 6,800đ ( mầm non nhu cầu ăn cũng ít hơn tiểu học 1 chút ).<br><br><span
-                        style="font-weight: bold;">Đối tượng nuôi: </span>Trẻ dưới 36 tháng và lớp 1-2 sống tại bản và 1
-                    số trường hợp đặc biệt&nbsp; ( không được nhà nước nuôi cơm trưa). Năm tiếp theo nếu đến tuổi nhà
-                    nước nuôi cơm sẽ nuôi bé khác "nhú" lên, giữ nguyên mã NE<br><br>Một số trường hợp cấp bách là cấp
-                    2, nếu không có hỗ trợ cơm trưa, cơm tối để học nội trú rất dễ bỏ học.<br><br><span
-                        style="font-weight: bold;">Số tiền</span>: 150,000/tháng/ cháu x 9 tháng học + 100,000 cơ sở vật
-                    chất * ( xem chi tiết phía dưới ) hoặc tuỳ đối tượng cụ thể nếu ăn ngày 2 bữa sẽ cao hơn 1 chút khi
-                    trao đổi sẽ chính xác hơn.<br>Tổng: 1,450,000đ/năm học.<br></p>
-                <button class="btn menu-btn">Ủng Hộ</button>
+                <button class="btn menu-btn">Menu</button>
             </div>
             <div class="image-block">
                 <section class="video-section1">
-                    <video src="C:\Users\Admin\Documents\GitHub\ProjectTask\img\videobuaan.mp4" loop playsinline controls></video>
+                    <video src="/Project/img/videobuaan.mp4"  loop playsinline controls></video>
                 </section>
             </div>
         </div>
     </section>
     <br><br><br><br><br><br>
     <section class="image-section">
-            <div class="tieude"> <h2>Tin Tức</h2>
-        <div class="image-grid">
-            <div class="image-block">
-                <img src="https://image.sggp.org.vn/w680/Uploaded/2024/vowkpqmc/2024_09_06/z5802933473440-1697517aadc9c08b5a2c6f17698e441e-7771-526.jpg.webp" alt="Kiến trúc 1">
-                <h3>Các bé ở Mái ấm Hoa Hồng về ngôi nhà mới</h3>
+        <div class="tieude">
+            <h2 data-key="tin_tuc">Tin Tức</h2>
+            <div class="image-grid">
+                <div class="image-block">
+                    <img src="https://image.sggp.org.vn/w680/Uploaded/2024/vowkpqmc/2024_09_06/z5802933473440-1697517aadc9c08b5a2c6f17698e441e-7771-526.jpg.webp"
+                        alt="Kiến trúc 1">
+                    <h3>Các bé ở Mái ấm Hoa Hồng về ngôi nhà mới</h3>
+                </div>
+                <div class="image-block">
+                    <img src="https://cdn.tuoitre.vn/471584752817336320/2024/9/11/base64-1726068524507198626138.jpeg"
+                        alt="Kiến trúc 2">
+                    <h3>Dự án 12 tỉ đồng chăm sóc, bảo vệ trẻ em có hoàn cảnh đặc biệt</h3>
+                </div>
+                <div class="image-block">
+                    <img src="https://cdn.tuoitre.vn/thumb_w/730/471584752817336320/2024/7/19/photo-1721381374455-17213813747942066364899.jpg"
+                        alt="Kiến trúc 3">
+                    <h3>MV ‘Ai nâng cánh em bay’ - Lời kêu gọi chung tay bảo vệ trẻ em</h3>
+                </div>
             </div>
-            <div class="image-block">
-                <img src="https://cdn.tuoitre.vn/471584752817336320/2024/9/11/base64-1726068524507198626138.jpeg" alt="Kiến trúc 2">
-                <h3>Dự án 12 tỉ đồng chăm sóc, bảo vệ trẻ em có hoàn cảnh đặc biệt</h3>
+            <div class="view-more-container">
+                <a href="#" class="view-more-button">Xem thêm</a>
             </div>
-            <div class="image-block">
-                <img src="https://cdn.tuoitre.vn/thumb_w/730/471584752817336320/2024/7/19/photo-1721381374455-17213813747942066364899.jpg" alt="Kiến trúc 3">
-                <h3>MV ‘Ai nâng cánh em bay’ - Lời kêu gọi chung tay bảo vệ trẻ em</h3>
-            </div>
-        </div>
-        <div class="view-more-container">
-            <a href="#" class="view-more-button">Xem thêm</a>
-        </div>
     </section>
     <br><br><br><br><br><br>
 
@@ -173,7 +200,7 @@
     <footer class="footer-section">
         <div class="footer-container">
             <div class="footer-logo">
-                <p>© 2024 Hội Người Fan Jack. <br> All rights reserved.</p>
+                <p data-key="footer">© 2024 Hội Người Fan Jack. <br> All rights reserved.</p>
             </div>
             <div class="footer-links">
                 <div class="footer-column">
@@ -207,6 +234,4 @@
         </div>
     </footer>
 </body>
-
-
 </html>
