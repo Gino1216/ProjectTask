@@ -768,3 +768,33 @@ footer {
         margin-left: 0;
     }
 }
+.aboutus{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    border-radius: 20px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+.img_about{
+    background-image: url(https://img.freepik.com/free-photo/close-up-smiley-kids-posing-together_23-2149199832.jpg?t=st=1726754011~exp=1726757611~hmac=6aad46ca58ac6762f3b37ea2ecbf8dd162e73cc34620f549076baa891123622a&w=900);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-image: 10px ;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+   width: 80%;
+   padding: 50px;
+    background-image: 
+    linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),
+    url(https://img.freepik.com/free-photo/close-up-smiley-kids-posing-together_23-2149199832.jpg?t=st=1726754011~exp=1726757611~hmac=6aad46ca58ac6762f3b37ea2ecbf8dd162e73cc34620f549076baa891123622a&w=900);
+background-repeat: no-repeat;
+background-size: cover;
+height: 65vh;
+
+
+}
