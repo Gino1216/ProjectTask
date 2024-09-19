@@ -1,78 +1,142 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bảo Vệ Trẻ Em Việt Nam</title>
-    <link rel="stylesheet" href="CSS/style.css"> <!-- Liên kết đến file CSS -->
+    <meta name="description" content="Hội Người Fan Jack - Bảo vệ quyền lợi và sự an toàn của trẻ em.">
+    <meta name="keywords" content="Fan Jack, bảo vệ trẻ em, quyền trẻ em, hỗ trợ trẻ em, tổ chức phi lợi nhuận">
+    <meta name="author" content="Hội Người Fan Jack">
+    <title>Hội Người Fan Jack</title>
+    <link rel="stylesheet" href="CSS/cssResponsive.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="CSS/js.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
-    <div class="header">
-        <!-- Logo and network name -->
-        <div class="logo">
-            <!-- <img src="img/banner-safe-spaces-for-kids-02.jpg" class="logo2" alt="Bảo Vệ Trẻ Em"> -->
-            <!-- <div class="social-links">
-                <a href="#"><img src="img/youtube-logo-grey.png" alt="YouTube"></a>
-                <a href="#"><img src="img/facebook-logo-grey.png" alt="Facebook"></a>
-            </div> -->
+    <header>
+        <div class="logo"></div>
+        <nav>
+            <div class="menu-toggle" id="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul id="nav-menu">
+                <li><a href="#">Trang Chủ</a></li>
+                <li><a href="#">Về Chúng Tôi</a></li>
+                <li><a href="#">Hoạt Động</a></li>
+                <li><a href="#">Nghiên Cứu</a></li>
+                <li class="search">
+                    <form action="#" method="get">
+                        <input type="text" placeholder="Tìm kiếm..." name="search">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="main">
+        <div class="content">
+            <h1>Hội Fan Jack</h1>
+            <p>Chúng tôi cam kết bảo vệ quyền lợi và sự an toàn của trẻ em, nhằm đảm bảo mỗi đứa trẻ đều có một môi
+                trường phát triển lành mạnh và hạnh phúc. Sứ mệnh của chúng tôi là nâng cao nhận thức về các vấn đề mà
+                trẻ em đang đối mặt, đồng thời cung cấp sự hỗ trợ cần thiết để bảo vệ các em khỏi mọi hình thức bạo lực
+                và lạm dụng.</p>
+            <div class="buttons">
+                <a href="#" class="btn primary">Login</a>
+                <a href="#" class="btn secondary">Reglogin</a>
+            </div>
         </div>
-
-        <!-- Search bar and login button -->
-        <div class="search-login">
-            <input type="text" class="search-bar" placeholder="Search">
-            <button class="login-button">Đăng nhập</button>
+        <div class="image">
+            <img src="img/C55A9951.jpg.jpg" alt="Hình ảnh kiến trúc liên quan đến Jack">
         </div>
-    </div>
+    </section>
 
-    <!-- Menu Toggle Button for mobile -->
-    <div class="menu-toggle" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-    <div class="nav">
-        <div class="nav-links">
-            <a href="#">TRANG CHỦ</a>
-            <a href="#">MẠNG LƯỚI</a>
-            <a href="#">TÀI LIỆU</a>
-            <a href="#">HỎI ĐÁP</a>
-            <a href="#">BÀY TỎ NGUYỆN VỌNG</a>
-            <a href="#">TIN TỨC SỰ KIỆN</a>
-            <a href="#">KIỂM TRA</a>
-            <a href="#" class="report-button">Báo cáo xâm hại</a>
+    <section class="content2">
+        <h2>Chúng Tôi Tin Rằng</h2>
+        <p>Tất cả trẻ em đều có quyền sống, phát triển và phát huy hết tiềm năng của mình - vì lợi ích của một thế giới
+            tốt đẹp hơn</p>
+        <section class="video-section">
+            <video src="/Project/img/Taihienhivong.mp4" autoplay loop muted playsinline></video>
+        </section>
+    </section>
+
+    <section class="image-section">
+        <div class="image-grid">
+            <div class="image-block">
+                <img src="img/image1.png" alt="Kiến trúc 1">
+                <h3>Explore</h3>
+                <p>Nâng tầm trải nghiệm kiến trúc với thiết kế này.</p>
+            </div>
+            <div class="image-block">
+                <img src="img/image2.png" alt="Kiến trúc 2">
+                <h3>Embrace</h3>
+                <p>Thiết kế vượt thời gian và sáng tạo.</p>
+            </div>
+            <div class="image-block">
+                <img src="img/image3.png" alt="Kiến trúc 3">
+                <h3>Unveil</h3>
+                <p>Trải nghiệm kiến trúc đánh thức giác quan.</p>
+            </div>
         </div>
-    </div>
-    <!-- Banner -->
-    <div class="banner-container">
-        <div class="banner-images">
-            <img src="img/article.jpg" class="banner-img" alt="Banner 1">
-            <img src="img/sddefault.jpg" class="banner-img" alt="Banner 3">
+    </section>
+    <!-- phần code hỗ trợ -->
+    <section class="split-section">
+        <div class="content-block">
+            <div class="text-block">
+                <h2>Hoạt Động Hỗ Trợ Các Em Nhỏ</h2>
+                <button class="btn menu-btn">Menu</button>
+            </div>
+            <div class="image-block">
+                <section class="video-section1">
+                    <video src="/Project/img/videobuaan.mp4" autoplay loop playsinline controls></video>
+                </section>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <script>
-        let currentIndex = 0;
-        const images = document.querySelectorAll('.banner-img');
-        const imageCount = images.length;
 
-        function showNextImage() {
-            images[currentIndex].classList.remove('active');
-            currentIndex = (currentIndex + 1) % imageCount;
-            images[currentIndex].classList.add('active');
-        }
-
-        images[currentIndex].classList.add('active');
-
-        setInterval(showNextImage, 1000);
-
-        function toggleMenu() {
-            const navLinks = document.querySelector('.nav-links');
-            navLinks.classList.toggle('show');
-        }
-    </script>
+    <!-- cuối trang foot -->
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <p>© 2024 Hội Người Fan Jack. <br> All rights reserved.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Discover</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
-hieu sezx
+
 
 </html>
