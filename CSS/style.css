@@ -175,6 +175,7 @@ footer {
 .image-section {
     padding: 50px;
     background-color: #fff;
+    text-align: center;
 }
 
 .image-grid {
@@ -186,20 +187,33 @@ footer {
 .image-block {
     flex-basis: 30%;
     text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
 }
 
 .image-block img {
-    max-width: 100%;
+    width: 100%;
+    aspect-ratio: 16 / 9; /* Giữ tỷ lệ 16:9 cho tất cả các hình */
+    object-fit: cover; /* Cắt bớt những phần dư của hình ảnh để giữ tỷ lệ */
     border-radius: 10px;
 }
 
 .image-block h3 {
     margin-top: 20px;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     color: #333;
 }
 
+/* Title styling */
+.tieude h2 {
+    display: flexbox;
+    font-size: 48px;
+    color: #333;
+    padding-bottom: 20px;
+}
 .image-block p {
     font-size: 16px;
     color: #666;
@@ -246,6 +260,38 @@ footer {
     border-radius: 10px;
     overflow: hidden;
 }
+/* Hiệu ứng hover */
+.image-block:hover {
+    transform: translateY(-10px); /* Tạo hiệu ứng nổi lên */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Tăng bóng đổ khi hover */
+}
+
+.image-block:hover img {
+    transform: scale(1.05); /* Phóng to hình ảnh một chút khi hover */
+}
+
+.view-more-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.view-more-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #000000; /* Màu xanh cho nút */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.view-more-button:hover {
+    background-color: #e90c0c; /* Màu thay đổi khi hover */
+}
+/* chân */
 
 .footer-section {
     width: 100vw;
@@ -490,8 +536,11 @@ footer {
     }
 
     .image-grid {
+        display: flex;
         flex-direction: column;
-    }
+        justify-content: space-between;
+        gap: 20px;
+      }
 
     .image-block {
         flex-basis: 100%;
@@ -658,8 +707,8 @@ footer {
 .search input[type="text"] {
     padding: 5px 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
+    border-radius: 15px;
+    font-size: 10px;
     width: 200px;
     /* Chiều rộng của ô tìm kiếm */
 }
@@ -668,7 +717,7 @@ footer {
     background: none;
     border: none;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 15px;
     color: black;
     margin-left: 5px;
 }
@@ -676,6 +725,35 @@ footer {
 /* Hiệu ứng cho nút tìm kiếm */
 .search button:hover {
     color: #333;
+}
+.search-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    
+}
+
+.search-box input[type="text"] {
+    width: 100%;
+    padding: 10px 50px 5px 15px; /* Thêm khoảng trống cho biểu tượng kính lúp */
+    font-size: 13px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+}
+
+.search-box button {
+    position: absolute;
+    right: 10px; /* Đặt nút kính lúp ở phía bên phải */
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    color: #333;
+}
+
+.search-box button i {
+    font-size: 16px;
 }
 
 
