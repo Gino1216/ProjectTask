@@ -860,3 +860,9 @@ height: 65vh;
 .menu-toggle {
     margin-right: auto;
 }
+.trangchuthanh{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

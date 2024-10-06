@@ -1,0 +1,60 @@
+.trangchu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding: 0;
+   
+  }
+  .trangchu  img {
+   height: 80vh;
+   width: 100%;
+   padding: 0;
+   margin: 0;
+   object-fit: cover;
+    position: relative;
+  }
+  .khauhieu{
+    position: absolute;
+    color: #2C3E50;
+   left: 10%;
+   width: 40%;
+   font-size: 50px;
+  }
+  .anhkhauhieu{
+    position: absolute;
+    background-color: #2C3E50;
+    width:20% ;
+    height: 80vh;
+right: 5cm;
+display: flex;flex-direction: column;justify-content: center;
+gap: 10px;
+overflow: hidden;
+align-items: center;
+  }
+  .anhkhauhieu img{
+    width: 90%;
+    height: 40vh;
+    border-radius: 20px;
+  }
+  body{
+    padding: 0;
+    margin: 0;
+  }
+  .vechungtoi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   width: 90%;
+   padding: 30px;
+    border-radius: 20px;
+    background-color: #B3E5FC;
+    margin: 20px;
+  }
+  .vechungtoi h1{ font-size: 42px;
+color: #0D47A1;
+gap: 20px;}
+  .vechungtoi div{ font-size: 28px;
+color: #0D47A1;}
