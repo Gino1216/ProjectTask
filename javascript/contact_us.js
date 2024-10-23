@@ -82,24 +82,50 @@ function CheckMessage() {
 
 
 function checksend() {
-    var name = document.getElementById('firstname');
-    var name2 = document.getElementById('lastname');
-    var email1 = document.getElementById('email');
-    var phone2 = document.getElementById('phone');
-    var message0 = document.getAnimations('message');
+    var firstname = document.getElementById('firstname').value;
+    var lastname = document.getElementById('lastname').value;
+    var email = document.getElementById('email').value;
+    var phone = document.getElementById('phone').value;
+    var message = document.getElementById('message').value;
 
-    var firstname = name.value;
-    var lastname = name2.value;
-    var email = email1.value;
-    var phone = phone2.value;
-    var message = message0.value;
-    if(firstname == "" || lastname == "" || email == "" || phone == "" || message == "") {
-        alert("Please enter enough.");
+    if (firstname === "" || lastname === "" || email === "" || phone === "" || message === "") {
+        alert("Please enter enough information.");
         return;
     }
-    else
-        alert("Successful");
-}
+
+    // Dữ liệu cần gửi
+    const data = {
+        firstname: firstname,
+        lastname: lastname,
+        email: email,
+        phone: phone,
+        message: message
+    };
+
+    // Gửi thông tin lên JSON server
+    fetch('http://localhost:3000/messages', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    })
+    .then(response => {
+        // Kiểm tra nếu trạng thái HTTP thành công (200-299)
+        if (response.ok) {
+            return response.json();
+        } else {
+            throw new Error('Network response was not ok');
+        }
+    })
+    .then(data => {
+        alert("Message sent successfully!");
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert("Error sending message");
+        });
+    }
 
 
 
