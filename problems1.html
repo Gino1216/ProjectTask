@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;}
+        body{background-color: #FFFAF0; /* Màu nền vàng nhạt */
+            color: #333;}
+.tieude{
+    font-size: 50px;
+}
+.content1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding-right: 60px;
+    padding-left:60px;
+    gap :40px;
+}
+.content2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding-right: 60px;
+    padding-left: 60px;
+    
+}
+.content3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding-top: 100px;
+    padding-right: 60px;
+    padding-left: 60px;
+    gap :60px;
+}
+.donate-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.donate-container h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input{
+    width: 100%;
+    border-radius: 20px;
+    height: 50px;
+}
+
+.donate-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.donate-button:hover {
+    background-color: #218838;
+}
+@media (max-width: 1024px) {
+            section {
+                padding: 40px;
+            }
+            .tieude {
+                font-size: 40px;
+            }
+            .content1, .content2, .content3 {
+                padding: 0 40px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .content1, .content2, .content3 {
+                flex-direction: column;
+                text-align: center;
+            }
+            .content1 div, .content2 div, .content3 div {
+                width: 100%;
+            }
+            .tieude {
+                font-size: 35px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .tieude {
+                font-size: 30px;
+            }
+            .content1 div:nth-child(2), .content2 div, .content3 div:nth-child(2) {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section style="padding: 60px;">
+        <h1 class="tieude">Những Đứa Trẻ “Khổng Lồ” Trong Vóc Dáng Của Người Tí Hon**</h1>
+        <div class="content1">
+            <div><img src="https://baocantho.com.vn/image/news/2014/20141116/fckimage/58171497547679_162.jpg" alt=""></div>
+            <div style="font-size: 28px;">Những Đứa Trẻ “Khổng Lồ” Trong Vóc Dáng Của Người Tí Hon**
+
+                Trong khi nước ta đang từng ngày tiến bộ về công nghệ, khoa học và xã hội, vẫn còn rất nhiều nơi trên đất nước chúng ta, những đứa trẻ đang lớn lên
+                 trong điều kiện thiếu thốn, đói khát và khổ đau. Những đứa trẻ này có tư duy trưởng thành và nhận thức sắc bén hơn so với tuổi, nhưng cơ thể 
+                 của chúng lại yếu ớt, gầy gò như những "bộ xương di động." Họ là những “người khổng lồ” trong vóc dáng của những “người tí hon,” bởi dù có ý 
+                 chí sống mạnh mẽ và khao khát vượt qua nghịch cảnh, chúng vẫn phải đối mặt với những khó khăn về thể chất do nạn đói và sự thiếu thốn cơ bản. </div>
+        </div>
+        <div class="content2">
+            
+            <div style="font-size: 28px;">Trẻ Em Với Tâm Hồn Lớn Lên Trong Thiếu Thốn
+
+                Những đứa trẻ sống trong nghèo đói, dù thân xác nhỏ bé và yếu đuối, nhưng lại có một sức mạnh tinh thần và ý chí sinh tồn đáng kinh
+                 ngạc. Nhiều trong số chúng phải làm việc từ rất nhỏ để giúp đỡ gia đình, hay thậm chí một số phải trở thành “người lớn” khi mới vài
+                  tuổi vì thiếu vắng sự chăm sóc của cha mẹ. Điều này buộc chúng phải phát triển khả năng tư duy độc lập, nhận thức sâu sắc hơn về 
+                  cuộc sống và thế giới xung quanh. Tâm hồn chúng dường như trưởng thành sớm hơn so với tuổi thực, nhưng cơ thể lại không thể theo 
+                  kịp sự phát triển đó.
+                 </div>
+        
+       
+    </div>
+    <div class="content3">
+        
+        <div style="font-size: 28px;">Nạn Đói – Kẻ Thù Âm Thầm Hủy Hoại
+
+            Nạn đói vẫn là một trong những vấn đề nhức nhối và khó giải quyết nhất những vùng xa xôi ở nước ta, không riêng gì thành phố , nông thôn , những vùng cao hẻo lánh đang phải đối mặt với tình trạng 
+            . Thiếu thốn lương thực và dinh dưỡng cơ bản khiến cơ thể của những đứa trẻ không phát
+              triển đầy đủ. Chúng trở nên gầy gò, yếu ớt; đôi mắt lờ đờ, và da bọc xương. Nạn đói không
+               chỉ cướp đi sức khỏe của chúng, mà còn làm giảm khả năng học tập và phát triển trí tuệ, gây ảnh hưởng lâu dài đến tương lai. </div>
+               <div><img src="https://vietjack.me/storage/uploads/images/587/picture-1-1657536385.png" width="600px" height="auto" alt=""></div>
+            </div>
+            <div class="content2">
+            
+                <div style="font-size: 28px;">Thiếu Thốn Cơ Bản – Ngăn Cản Tiềm Năng
+
+                    Không chỉ là vấn đề về dinh dưỡng, những đứa trẻ này còn thiếu thốn về nhiều mặt khác như giáo dục, y tế và cơ hội phát triển.
+                     Trong khi trẻ em ở các thành phố lớn được hưởng nền giáo dục đầy đủ và chăm sóc sức khỏe chất lượng, thì những đứa trẻ 
+                     sống trong cảnh nghèo đói hầu như không có cơ hội đến trường. Chúng bị bỏ lại phía sau trong cuộc đua phát triển của thế giới,
+                      mặc dù nhiều em có khả năng nhận thức tốt và khao khát được học hỏi, nhưng điều kiện sống hạn chế đã cản trở tiềm năng của 
+                      chúng.
+                    
+                     </div>
+            
+           
+        </div>
+        <div class="content1" style="padding-top:100px ;">
+            <div><img width="600px" height="auto" src="https://www.fmsc.org/-/media/images/blog/nelsonedited2.jpg?h=535&w=848&hash=F34DAD318F76AB265FFD1B44B36A53D7B9A03188&hash=F34DAD318F76AB265FFD1B44B36A53D7B9A03188" alt=""></div>
+            <div style="font-size: 28px;">Giấc Mơ Vươn Xa Nhưng Cơ Thể Bị Cầm Chân
+
+                Hãy tưởng tượng những đứa trẻ lớn lên trong một môi trường đầy khó khăn. Chúng có những giấc mơ, khát vọng vươn lên và mong muốn thay đổi
+                 cuộc sống của mình. Tuy nhiên, chính cơ thể suy dinh dưỡng và những nhu cầu cơ bản không được đáp ứng đã kéo chúng trở lại với hiện thực phũ
+                  phàng. Trí óc của chúng có thể phát triển mạnh mẽ, nhưng cơ thể yếu ớt và hoàn cảnh sống khắc nghiệt đã trói buộc những khát vọng lớn lao ấy
+                  . Những đứa trẻ “khổng lồ” trong vóc dáng “tí hon” đang phải đối mặt với một cuộc chiến không cân sức để tồn tại và phát triển. 
+                </div>
+        </div>
+        
+        <div class="content2">
+            
+            <div style="font-size: 28px;padding-top: 100px; "><h1>Hành Động Ngay Hôm Nay Để Cứu Lấy Tương Lai</h1>
+
+                Vấn đề trẻ em nghèo đói không chỉ là câu chuyện của một quốc gia hay một khu vực. Đây là một vấn đề toàn cầu đòi hỏi sự chung tay của cả nước. Việc cung 
+                cấp dinh dưỡng, giáo dục và cơ hội phát triển cho những đứa trẻ này không chỉ là trách nhiệm đạo đức mà còn
+                là cách để xây dựng một tương lai tốt đẹp hơn. Nếu những đứa trẻ hôm nay được cứu giúp, chúng có thể trở thành những nhân tố quan trọng góp phần thay
+                đổi cộng đồng và thậm chí là thế giới.Những đứa trẻ "khổng lồ" trong vóc dáng của người tí hon là hình ảnh tượng trưng cho sự bất công mà nhiều trẻ em
+                trên thế giới phải chịu đựng. Chúng có thể vượt qua nghịch cảnh và phát triển mạnh mẽ về trí tuệ, nhưng cơ thể và điều kiện sống đã cản trở tiềm năng
+                ủa chúng. Hãy cùng hành động ngay hôm nay, để không còn những đứa trẻ phải gánh chịu nạn đói và thiếu thốn, để chúng có thể vươn tới một tương lai tươi
+                áng hơn, xứng đáng với khả năng và ước mơ mà chúng nắm giữ.
+            <h1>vậy nên hãy đưa tiền đây để chúng tôi cứu chúng nó :)</h1>
+            <h1>nếu bạn có thông tin những con vk nào đang sống khổ như chóa hãy điền thông tin dưới đây để chúng tôi trợ giúp </h1>
+        </div> 
+            </div>
+    </section>
+    <h1>Cách thức quyên góp và hỗ trợ trẻ em</h1>
+    <div class="donate-container">
+        <h2>hỗ trợ</h2>
+        <form onsubmit="thankYouMessage(); return false;">
+            <div class="form-group">
+                <label for="amount">Số tiền muốn hỗ trợ(VNĐ):</label>
+                <input  placeholder="Nhập số tiền" required>
+            </div>
+
+            <div class="form-group">
+                <label for="name">Họ và tên:</label>
+                <input  placeholder="Nhập họ tên của bạn" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Địa chỉ:</label>
+                <input  placeholder="Nhập địa chỉ của bạn" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Số điện thoại:</label>
+                <input  placeholder="Nhập số điện thoại của bạn" required>
+            </div>
+
+            <button  class="donate-button">Donate</button>
+        </form>
+    </div>
+</body>
+</html>
