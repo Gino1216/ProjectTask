@@ -24,7 +24,6 @@
   border-bottom: 1px solid rgb(190, 185, 185);
   background-color: rgb(68, 68, 68);
   font-size: 15px;
-
   position: fixed;
   z-index: 10;
 }
@@ -81,9 +80,10 @@
   text-align: left;
 }
 
-.city_color a{
+.city_color a {
   color: #37b5fe;
 }
+
 #menu>.item:hover>a,
 .item_city>.city>a:hover {
   color: #37b5fe;
@@ -122,7 +122,7 @@
 #search:hover #search_text,
 #search #search_text:valid {
   width: 150px;
-  padding: 5px 0px 10px 10px;
+  padding: 5px 0px 10px 10px; 
 }
 
 /* Hết thanh nav */
