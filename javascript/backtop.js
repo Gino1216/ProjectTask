@@ -67,7 +67,7 @@ const menu = [
   },
   {
     label: "CHECK",
-    href: "/today in world",
+    href: "/project/check",
   },
   {
     label: "CONTACT US",

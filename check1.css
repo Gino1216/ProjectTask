@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #007bff;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.filter-region, .filter-issue {
+    display: flex;
+    flex-direction: column;
+}
+
+select {
+    padding: 5px;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.person-list {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.person-card {
+    background-color: #eaeaea;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: none; /* Ẩn ban đầu */
+}
+
+.person-card h2 {
+    margin-top: 0;
+    color: #0056b3;
+}
+
+.person-info {
+    list-style: none;
+    padding: 0;
+}
+
+.person-info li {
+    margin-bottom: 5px;
+}
+
+.person-info li span {
+    font-weight: bold;
+}
+
+.person-description {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.tags {
+    display: inline-block;
+    background-color: #d1ecf1;
+    color: #0c5460;
+    padding: 2px 6px;
+    margin-right: 5px;
+    border-radius: 3px;
+    font-size: 12px;
+}
