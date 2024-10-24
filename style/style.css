@@ -1679,6 +1679,7 @@ a:link {
   #menu .item a {
     font-size: 15px;
     padding: 12px;
+    color: #000;
   }
 
   #menu .item {

@@ -13,7 +13,7 @@ document.getElementById('upload_images').addEventListener('change', function(eve
       });
     }
   });
-  function checksend() {
+  function checksendtoday() {
     var firstname = document.getElementById("firstname").value;
     var lastname = document.getElementById("lastname").value;
     var email = document.getElementById("email").value;
