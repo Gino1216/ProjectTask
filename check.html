@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông Tin Cá Nhân - Vấn Đề Xã Hội</title>
+    <link rel="stylesheet" href="check1.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Thông Tin Cá Nhân và Vấn Đề Xã Hội</h1>
+        
+        <!-- Phần kiểm tra theo vùng miền và vấn đề -->
+        <div class="filters">
+            <div class="filter-region">
+                <label for="region-select">Chọn Vùng Miền:</label>
+                <select id="region-select">
+                    <option value="all">Tất cả</option>
+                    <option value="Miền Bắc">Miền Bắc</option>
+                    <option value="Miền Trung">Miền Trung</option>
+                    <option value="Miền Nam">Miền Nam</option>
+                </select>
+            </div>
+            <div class="filter-issue">
+                <label for="issue-select">Chọn Vấn Đề:</label>
+                <select id="issue-select">
+                    <option value="all">Tất cả</option>
+                    <option value="Bạo lực gia đình">Bạo lực gia đình</option>
+                    <option value="Lao động trẻ em">Lao động trẻ em</option>
+                    <option value="Xâm hại tình dục trẻ em">Xâm hại tình dục trẻ em</option>
+                    <option value="Tảo hôn">Tảo hôn</option>
+                    <option value="Hôn nhân ép buộc">Hôn nhân ép buộc</option>
+                    <option value="Bắt cóc và buôn bán trẻ em">Bắt cóc và buôn bán trẻ em</option>
+                    <option value="Thiếu tiếp cận giáo dục">Thiếu tiếp cận giáo dục</option>
+                    <option value="Bắt nạt và bạo lực học đường">Bắt nạt và bạo lực học đường</option>
+                    <option value="Thiếu tiếp cận chăm sóc y tế">Thiếu tiếp cận chăm sóc y tế</option>
+                    <option value="Khó khăn kinh tế và thiếu tiếp cận dịch vụ">Khó khăn kinh tế và thiếu tiếp cận dịch vụ</option>
+                    <option value="Ảnh hưởng của thiên tai và biến đổi khí hậu">Ảnh hưởng của thiên tai và biến đổi khí hậu</option>
+                    <option value="Các chương trình hỗ trợ và sự tham gia của cộng đồng">Các chương trình hỗ trợ và sự tham gia của cộng đồng</option>
+                    <option value="Chênh lệch về sắc tộc và vùng miền">Chênh lệch về sắc tộc và vùng miền</option>
+                </select>
+            </div>
+            <!-- Nút mới để hiện tất cả -->
+            <button id="show-all-btn">Hiện tất cả</button>
+        </div>
+
+        <div id="person-list" class="person-list">
+            <!-- Thông tin các cá nhân sẽ được tự động thêm bởi JavaScript -->
+        </div>
+    </div>
+    <script src="check2.js"></script>
+</body>
+</html>
