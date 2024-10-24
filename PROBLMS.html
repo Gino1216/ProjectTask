@@ -11,13 +11,98 @@
       crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
       crossorigin="anonymous"></script>
-   
+      <style>
+         
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 36px;
+            margin-bottom: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .containerthanh {
+            max-width: 80%;
+            
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9); /* Nền trắng với độ trong suốt */
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Đổ bóng nhẹ cho container */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+           
+        }
+
+        .thanh{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          max-width: 60%;
+          gap:40px;
+          margin: 20px;
+
+        }
+        div.thanh img{
+          max-width: 70%;
+          border-radius: 20px;
+        }
+       
+        
+    </style>
 </head>
 <body>
-    <div class="item">
-        <a style="color: black;" href="problems1.html">problems1</a>
-      </div><div class="item">
-        <a  style="color: black;" href="problems2.html">problems2</a>
+  <div id="wrapper">
+    <div id="header">
+      <img src="image/logo.png" alt="">
+      <div id="menu">
+        <div class="item item_bottom">
+          <a href="index.html">HOME</a>
+        </div>
+        <div class="item">
+          <a href="about us.html">ABOUT US</a>
+        </div>
+        <div class="item">
+          <a href="PROBLMS.html">PROBLEMS</a>
+        </div>
+        <div class="item item_world ">
+          <a href="today in world.html">TODAY</a>
+          <!-- <div class="item_city">
+            <div class="city"><a href="new york.html">NEW YORK</a></div>
+            <div class="city"><a href="tokyo.html">TOKYO</a></div>
+            <div class="city"><a href="sydney.html">SYDNEY</a></div>
+            <div class="city"><a href="paris.html">PARIS</a></div>
+            <div class="city"><a href="moskva.html">MOSKVA</a></div>
+          </div> -->
+        </div>
+        <div class="item">
+          <a href="#">CHECK</a>
+        </div>
+        <div class="item">
+          <a href="contact us.html">CONTACT US</a>
+        </div>
       </div>
+      <form action="" id="search">
+        <input type="text" id="search_text" placeholder="Search here..." required>
+        <button id="search_btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </form>
+    </div>
+  </div>
+  <h1>Các Vấn Đề Của Trẻ Em</h1>
+  <section style="display: flex;justify-content: center;align-items: center;">
+  <div class="containerthanh">
+      
+        <div class="thanh">
+          <img  src="http://images.baodantoc.vn/uploads/2019/Ng%C3%A0y%2030thang12/tre-em-suy-dinh-duong-20190918003509471.jpg" alt="">
+          <div><a style="color: black; text-decoration: none;font-size: 35px;font-family: Arial, Helvetica, sans-serif;" href="problems1.html">Nạn Đói ở việt nam</a></div>
+      </div>
+      
+     <div class="thanh">
+      <img src="https://images2.thanhnien.vn/zoom/600_315/Uploaded/2014/Pictures20129/CongDong/130912/truonghocDBSCLb.jpg" alt="">
+         <div> <a style="color: black; text-decoration: none;font-size: 35px;font-family: Arial, Helvetica, sans-serif;" href="problems2.html">thiếu giáo dục và y tế</a></div>
+      </div>
+  </div>
+</section>
 </body>
 </html>
