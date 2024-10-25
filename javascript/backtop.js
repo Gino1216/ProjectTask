@@ -55,14 +55,14 @@ function searchFunction() {
 const menu = [
   {
     label: "HOME",
-    href: "/index",
+    href: "/project/index",
   },
   {
     label: "ABOUT US",
     href: "/project/about us",
   },
   {
-    label: "PROBLMS",
+    label: "PROBLEMS",
     href: "/project/PROBLMS",
   },
   {
@@ -112,12 +112,14 @@ function getMenuMobile() {
       iconMenuOpenElement.style.display = "block";
       iconMenuCloseElement.style.display = "none";
       containerMenuMobileElement.classList.remove("showMenu");
+       navElement.style.display = "none"
     } else {
       containerMenuMobileElement.style.backgroundColor = "white";
       containerMenuMobileElement.style.height = "100%";
       iconMenuOpenElement.style.display = "none";
       iconMenuCloseElement.style.display = "block";
       containerMenuMobileElement.classList.add("showMenu");
+       navElement.style.display = "none"
       navElement.style.height = "100%";
       navElement.style.display = "block"
     }
