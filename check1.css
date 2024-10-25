@@ -1,8 +1,9 @@
+/* Reset cơ bản */
 body {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
     color: #333;
-    padding: 0;
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,6 +11,7 @@ body {
     margin: 0;
 }
 
+/* Container chính */
 .container {
     width: 90%;
     max-width: 800px;
@@ -20,33 +22,43 @@ body {
     margin-top: 20px;
 }
 
+/* Tiêu đề */
 h1 {
     text-align: center;
     color: #007bff;
 }
 
+/* Bộ lọc */
 .filters {
     display: flex;
     justify-content: space-around;
     margin-bottom: 20px;
 }
 
+/* Bộ lọc vùng miền và vấn đề */
 .filter-region, .filter-issue {
     display: flex;
     flex-direction: column;
 }
 
+/* Điều chỉnh các thành phần chọn */
 select {
     padding: 5px;
     margin-top: 5px;
     font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    white-space: normal;
+    overflow-wrap: break-word;
 }
 
+/* Danh sách người */
 .person-list {
     margin-top: 20px;
     text-align: left;
 }
 
+/* Thẻ thông tin cá nhân */
 .person-card {
     background-color: #eaeaea;
     padding: 15px;
@@ -56,11 +68,13 @@ select {
     display: none; /* Ẩn ban đầu */
 }
 
+/* Tiêu đề trong thẻ cá nhân */
 .person-card h2 {
     margin-top: 0;
     color: #0056b3;
 }
 
+/* Thông tin chi tiết cá nhân */
 .person-info {
     list-style: none;
     padding: 0;
@@ -74,11 +88,13 @@ select {
     font-weight: bold;
 }
 
+/* Mô tả cá nhân */
 .person-description {
     margin-top: 10px;
     font-style: italic;
 }
 
+/* Thẻ tags */
 .tags {
     display: inline-block;
     background-color: #d1ecf1;
@@ -87,4 +103,62 @@ select {
     margin-right: 5px;
     border-radius: 3px;
     font-size: 12px;
+}
+
+/* Thiết kế nút "Hiện tất cả" */
+#show-all-btn {
+    background-color: #007bff; /* Màu xanh dương nổi bật */
+    color: #fff; /* Chữ trắng */
+    border: none; /* Bỏ viền mặc định */
+    padding: 10px 20px; /* Tạo khoảng đệm cho nút */
+    font-size: 16px; /* Kích thước chữ */
+    border-radius: 5px; /* Bo góc mềm mại */
+    cursor: pointer; /* Thay đổi con trỏ khi hover */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu khi hover */
+    width: auto;
+}
+
+/* Hiệu ứng khi hover vào nút */
+#show-all-btn:hover {
+    background-color: #0056b3; /* Màu tối hơn khi hover */
+}
+
+/* Mobile layout adjustments */
+@media (max-width: 600px) {
+    /* Điều chỉnh container để phù hợp trên màn hình nhỏ */
+    .container {
+        width: 100%;
+        padding: 10px;
+        box-shadow: none;
+        margin-top: 10px;
+    }
+
+    /* Sắp xếp các bộ lọc thành cột */
+    .filters {
+        flex-direction: column;
+        align-items: stretch;
+        margin-bottom: 15px;
+    }
+
+    /* Khoảng cách giữa các phần tử chọn */
+    .filter-region,
+    .filter-issue {
+        margin-bottom: 10px;
+    }
+
+    /* Đảm bảo các phần tử chọn không bị tràn khung */
+    select {
+        padding: 10px;
+        font-size: 14px;
+        white-space: normal;
+        overflow-wrap: break-word;
+        box-sizing: border-box;
+    }
+
+    /* Đặt nút "Hiện tất cả" dưới phần chọn vấn đề */
+    #show-all-btn {
+        margin-top: 10px; /* Khoảng cách giữa nút và phần trên */
+        width: 100%; /* Đảm bảo nút rộng đầy đủ trên mobile */
+        padding: 12px 0; /* Điều chỉnh đệm để nút lớn hơn và dễ bấm hơn */
+    }
 }

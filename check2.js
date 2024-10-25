@@ -11,7 +11,7 @@ const people = [
 
 {
         name: " Nguyễn Văn Tiến ",
-        region: "Miền Bắc (Hà Nộ)",
+        region: "Miền Bắc (Hà Nội)",
         address: "Không có địa chỉ",
         dob: "15/06/2000",
         job: " Sinh viên ",
