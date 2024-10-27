@@ -1,60 +1,206 @@
-.trangchu{
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 36px;
+  margin-bottom: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.tieude{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 70px;
+}
+.tieude .canh {
+  max-height: 50vh; /* Giới hạn chiều cao của khung */
+  display: flex;
+  justify-content: center;
+max-width: 100%; /* Giới hạn chiều rộng của khung */
+
+  border: 2px solid black;
+}
+.tieude .canh img {
+  max-width: 100%; /* chỉnh kích thước ảnh */
+  height: auto; 
+  object-fit: cover; 
+}
+.tieude2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(197, 197, 197);
+  width: 90%;
+  height: 30vh; /* responsvie cho lên 50vh */
+  box-shadow: 0px 10px 20px rgba(128, 128, 128, 0.3);
+
+}
+.chutieude{
+  width: 70%;
+  text-align: center;
+}
+.noidung{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 90%;
+
+  flex-direction: column;
+  gap: 80px;
+}
+/* chỉnh hàng 2 */ /* chỉnh hàng 2 */
+.hang2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+  
+}
+.noidunghang2{
+    display: flex; 
+    flex-direction: column;
+    max-width: 23%;
+    height: 80vh;
+    transition: all 0.3s ease;
+    box-shadow: 0px 10px 20px rgba(80, 80, 80, 0.4), 0px 20px 40px rgba(128, 128, 128, 0.2);
+}
+.noidunghang2:hover{
+  box-shadow: 0px 15px 30px rgba(77, 166, 255, 0.4), 0px 25px 50px rgba(173, 216, 230, 0.3);
+}
+.noidunghang2 img{
+max-width: 100%;
+height: auto;
+object-fit: cover;
+}
+div.noidunghang2 a{
+  color: black;
+  transition: all 0.3s ease;
+}
+.noidunghang2:hover{
+  color: #4da6ff;
+}
+/* chỉnh hàng 1 */
+.hang1{
+  display: flex;
+  justify-content: space-between;
+ gap: 3%;
+
+ max-width: 100%;
+  
+}
+.noidunghang1{
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 20px;
-    padding: 0;
+    width: 50%;
+    height: auto;
+    box-shadow: 0px 10px 20px rgba(80, 80, 80, 0.4), 0px 20px 40px rgba(128, 128, 128, 0.2);
+    transition: all 0.3s ease;
+    overflow: hidden;
+    
+}
+.noidunghang1:hover{
+  box-shadow: 0px 15px 30px rgba(77, 166, 255, 0.4), 0px 25px 50px rgba(173, 216, 230, 0.3);
+}
+.noidunghang1 img{
+max-width: 100%;/* chỉnh  ảnh  */
+height: auto;
+object-fit: cover;
+}
+div.noidunghang1 a{
+  color: black;
+}
+.contentnoidung1{
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+.contentnoidung1:hover{
+  color: #4da6ff;
+}
+/* chỉnh hàng 12 */
+
+.noidunghang12{
+  display: flex;
+  max-width: 100%;/* chỉnh khung nội dung */
+    height: 90vh;/* chỉnh khung ảnh  */
+    box-shadow: 0px 10px 20px rgba(80, 80, 80, 0.4), 0px 20px 40px rgba(128, 128, 128, 0.2);
+    transition: all 0.3s ease;
+
+overflow: hidden;
+gap: 20px; 
+ 
+}
+.noidunghang12:hover{
+  box-shadow: 0px 15px 30px rgba(77, 166, 255, 0.4), 0px 25px 50px rgba(173, 216, 230, 0.3);
+} 
+.noidunghang12  img{
+  max-width: 100%;/* chỉnh ảnh  */
+  object-fit: cover;
+  height: auto;
+  padding: 0%;
+  margin: 0%;
+  
+  }
+  .contentnoidung12{
+   display: flex;
+ gap: 20px;
+   flex-direction: column;
+   padding: 20px;
+   color: black;
+   transition: all 0.3s ease;
+  }
+  .contentnoidung12:hover{
+    color: #4da6ff;
+    
+    
+  }
+  .noidunghang1 , .noidunghang12 ,.noidunghang2,.noidunghang2 img{
+    border-radius: 20px;
+  }
+  /* nội dung thêm  */
+  
+  .hidden{
+    display: none;
+  }
+  .noidungthem{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .buttoncuathanh{
+    padding: 40px 100px;
+    margin: 20px;
+    border-radius: 20px;
+    background-color: #4da6ff; 
+    color: white; 
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Tạo hiệu ứng nổi */
+    transition: background-color 0.3s, transform 0.2s;
    
   }
-  .trangchu  img {
-   height: 80vh;
-   width: 100%;
-   padding: 0;
-   margin: 0;
-   object-fit: cover;
-    position: relative;
+  .buttoncuathanh:hover {
+    background-color: #3399ff; 
+    transform: scale(1.05); 
   }
-  .khauhieu{
-    position: absolute;
-    color: #2C3E50;
-   left: 10%;
-   width: 40%;
-   font-size: 50px;
+  
+  .buttoncuathanh:active {
+    background-color: #1a8cff; 
+    transform: scale(0.7); 
   }
-  .anhkhauhieu{
-    position: absolute;
-    background-color: #2C3E50;
-    width:20% ;
-    height: 80vh;
-right: 5cm;
-display: flex;flex-direction: column;justify-content: center;
-gap: 10px;
-overflow: hidden;
-align-items: center;
-  }
-  .anhkhauhieu img{
-    width: 90%;
-    height: 40vh;
-    border-radius: 20px;
-  }
-  body{
-    padding: 0;
-    margin: 0;
-  }
-  .vechungtoi{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-   width: 90%;
-   padding: 30px;
-    border-radius: 20px;
-    background-color: #B3E5FC;
-    margin: 20px;
-  }
-  .vechungtoi h1{ font-size: 42px;
-color: #0D47A1;
-gap: 20px;}
-  .vechungtoi div{ font-size: 28px;
-color: #0D47A1;}
+/* nội dung cuối */
+.noidungcuoi{
+  margin-top: 30px;
+}
+
+
+  
+
+  
+  
