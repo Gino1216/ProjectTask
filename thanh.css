@@ -248,7 +248,25 @@ gap: 20px;
   .donation-button:hover {
     background-color: #3c94e6;
   }
-
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Khoảng cách so với nội dung trên */
+  }
+  
+  #showMoreBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50; /* Màu nền của nút */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #showMoreBtn:hover {
+    background-color: #45a049; /* Màu nền khi di chuột qua nút */
+  }
   
 
   

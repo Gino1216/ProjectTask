@@ -1,14 +1,10 @@
-// script.js
-function toggleContent() {
-    const extraContent = document.getElementById("extraContent1");
-    const button = document.querySelector("buttoncuathanh");
-  
-    if (extraContent.classList.contains("hidden1")) {
-      extraContent.classList.remove("hidden1");
-      button.textContent = "Ẩn bớt";
-    } else {
-      extraContent.classList.add("hidden1");
-      button.textContent = "Hiển thị thêm";
-    }
+function toggleExtraContent() {
+  const extraContent = document.getElementById("extraContent1");
+  if (extraContent.classList.contains("hidden1")) {
+    extraContent.classList.remove("hidden1");
+    document.getElementById("showMoreBtn").innerText = "Thu gọn";
+  } else {
+    extraContent.classList.add("hidden1");
+    document.getElementById("showMoreBtn").innerText = "Hiển thị thêm";
   }
-  
+}
