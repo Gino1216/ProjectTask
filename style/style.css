@@ -12,7 +12,7 @@
 /* Bắt đầu phần header */
 #wrapper {
   width: 100%;
-  height: 80px;
+  height: 74px;
 }
 
 #header {
@@ -24,6 +24,7 @@
   border-bottom: 1px solid rgb(190, 185, 185);
   background-color: rgb(68, 68, 68);
   font-size: 15px;
+
   position: fixed;
   z-index: 10;
 }
@@ -58,14 +59,14 @@
 }
 
 .item_bottom,
-#menu > .item_bottom {
+#menu>.item_bottom {
   border-bottom: #37b5fe solid 2px;
 }
 
-.item_bottom > a,
-#menu > .item_bottom {
+.item_bottom>a,
+#menu>.item_bottom {
   color: #37b5fe;
-}
+} 
 
 .item_city {
   visibility: hidden;
@@ -80,17 +81,16 @@
   text-align: left;
 }
 
-.city_color a {
+.city_color a{
   color: #37b5fe;
 }
-
-#menu > .item:hover > a,
-.item_city > .city > a:hover {
+#menu>.item:hover>a,
+.item_city>.city>a:hover {
   color: #37b5fe;
   opacity: 0.7;
 }
 
-#menu > .item_world:hover > .item_city {
+#menu>.item_world:hover>.item_city {
   visibility: visible;
   opacity: 1;
 }

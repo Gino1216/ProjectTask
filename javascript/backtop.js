@@ -71,7 +71,7 @@ const menu = [
   },
   {
     label: "CHECK",
-    href: "/project/check",
+    href: "/check",
   },
   {
     label: "CONTACT US",
