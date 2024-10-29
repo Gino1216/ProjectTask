@@ -3,6 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="thanh.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"></script>
     <title>Document</title>
     <style>
         *{box-sizing: border-box;}
@@ -19,6 +26,10 @@
     padding-right: 60px;
     padding-left:60px;
     gap :40px;
+}
+.content1 div img {
+    max-width: 600px;
+    height: auto;
 }
 .content2{
     display: flex;
@@ -123,10 +134,56 @@
     }
 </script>
 <body>
+    <div id="wrapper">
+        <div id="header">
+          <img src="image/logo.png" alt="">
+          <div id="menu">
+            <div class="item item_bottom">
+              <a href="index.html">HOME</a>
+            </div>
+            <div class="item">
+              <a href="about us.html">ABOUT US</a>
+            </div>
+            <div class="item">
+              <a href="ACTIVITI.html">ACTIVITI AND DONATE</a>
+            </div>
+            <div class="item item_world ">
+              <a href="today in world.html">TODAY</a>
+              <!-- <div class="item_city">
+                <div class="city"><a href="new york.html">NEW YORK</a></div>
+                <div class="city"><a href="tokyo.html">TOKYO</a></div>
+                <div class="city"><a href="sydney.html">SYDNEY</a></div>
+                <div class="city"><a href="paris.html">PARIS</a></div>
+                <div class="city"><a href="moskva.html">MOSKVA</a></div>
+              </div> -->
+            </div>
+            <div class="item">
+              <a href="check.html">CHECK</a>
+            </div>
+            <div class="item">
+              <a href="contact us.html">CONTACT US</a>
+            </div>
+          </div>
+          <form action="" id="search" onsubmit="return searchFunction();">
+            <input type="text" id="search_text" placeholder="Search here..." required>
+            <button id="search_btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+        </div>
+        <div class="parent-icon">
+          <div class="icon-menu-open">
+            <i class="fas fa-bars fa-lg"></i>
+          </div>
+          <div class="icon-menu-close">
+            <i class="fas fa-times fa-lg"></i>
+          </div>
+        </div>
+      </div>
+
+      
     <section style="padding: 60px;">
         <h1 class="tieude">Những Đứa Trẻ “Khổng Lồ” Trong Vóc Dáng Của Người Tí Hon**</h1>
         <div class="content1">
-            <div><img src="https://baocantho.com.vn/image/news/2014/20141116/fckimage/58171497547679_162.jpg" alt=""></div>
+            <div><img src="https://suckhoedoisong.qltns.mediacdn.vn/324455921873985536/2023/10/12/bai-dinh-duong-73-16970949422491775991882.jpg" alt=""></div>
             <div style="font-size: 28px;">Những Đứa Trẻ “Khổng Lồ” Trong Vóc Dáng Của Người Tí Hon**
 
                 Trong khi nước ta đang từng ngày tiến bộ về công nghệ, khoa học và xã hội, vẫn còn rất nhiều nơi trên đất nước chúng ta, những đứa trẻ đang lớn lên
@@ -155,7 +212,7 @@
             . Thiếu thốn lương thực và dinh dưỡng cơ bản khiến cơ thể của những đứa trẻ không phát
               triển đầy đủ. Chúng trở nên gầy gò, yếu ớt; đôi mắt lờ đờ, và da bọc xương. Nạn đói không
                chỉ cướp đi sức khỏe của chúng, mà còn làm giảm khả năng học tập và phát triển trí tuệ, gây ảnh hưởng lâu dài đến tương lai. </div>
-               <div><img src="https://vietjack.me/storage/uploads/images/587/picture-1-1657536385.png" width="600px" height="auto" alt=""></div>
+               <div><img src="https://www.unicef.org/vietnam/sites/unicef.org.vietnam/files/styles/press_release_feature/public/UN0155663.jpg.webp?itok=_AH7zPLd" width="600px" height="auto" alt=""></div>
             </div>
             <div class="content2">
             
@@ -172,7 +229,7 @@
            
         </div>
         <div class="content1" style="padding-top:100px ;">
-            <div><img width="600px" height="auto" src="https://www.fmsc.org/-/media/images/blog/nelsonedited2.jpg?h=535&w=848&hash=F34DAD318F76AB265FFD1B44B36A53D7B9A03188&hash=F34DAD318F76AB265FFD1B44B36A53D7B9A03188" alt=""></div>
+            <div><img width="600px" height="auto" src="https://childfund.org.vn/wp-content/uploads/2020/11/DUCT6349-768x512.jpg"></div>
             <div style="font-size: 28px;">Giấc Mơ Vươn Xa Nhưng Cơ Thể Bị Cầm Chân
 
                 Hãy tưởng tượng những đứa trẻ lớn lên trong một môi trường đầy khó khăn. Chúng có những giấc mơ, khát vọng vươn lên và mong muốn thay đổi
@@ -198,31 +255,66 @@
             </div>
     </section>
     <h1>Cách thức quyên góp và hỗ trợ trẻ em</h1>
-    <div class="donate-container">
-        <h2>hỗ trợ</h2>
-        <form onsubmit="thankYouMessage(); return false;">
-            <div class="form-group">
-                <label for="amount">Số tiền muốn hỗ trợ(VNĐ):</label>
-                <input  placeholder="Nhập số tiền" required>
+    <section class="phandonate">
+        <div class="donation-container">
+          <h2>Make a Donation</h2>
+          <form class="donation-form" onsubmit="event.preventDefault(); alert('Thank you for your donation!');">
+            
+            <input type="number"  placeholder="Enter amount" required>
+        
+           
+            <input type="text" placeholder="Enter your name" required>
+        
+            
+            <input type="text" placeholder="Enter your address" required>
+        
+            
+            <input type="text"  placeholder="Enter your phone number" required>
+        
+            <button type="submit" class="donation-button">Donate</button>
+          </form>
+        </div>
+      
+      </section>
+      <section class="noidungcuoi">
+        <div class="footer-container">
+          <div class="footer">
+            <div class="footer-row-1">
+              <h2>About US</h2>
+              <a href="about us.html">Blog</a>
+              <a href="about us.html">Demo</a>
+              <a href="about us.html">Customer</a>
+              <a href="about us.html">Terms of Service</a>
             </div>
-
-            <div class="form-group">
-                <label for="name">Họ và tên:</label>
-                <input  placeholder="Nhập họ tên của bạn" required>
+      
+            <div class="footer-row-1">
+              <h2>Contact US</h2>
+              <a href="contact us.html">Jobs</a>
+              <a href="contact us.html">Support</a>
+              <a href="contact us.html">Contact</a>
+              <a href="contact us.html">Sponsorships</a>
             </div>
-
-            <div class="form-group">
-                <label for="address">Địa chỉ:</label>
-                <input  placeholder="Nhập địa chỉ của bạn" required>
+      
+            <div class="footer-row-1">
+              <h2>Social Media</h2>
+              <a href="index.html">Instagram</a>
+              <a href="index.html">Facebook</a>
+              <a href="index.html">Youtube</a>
+              <a href="index.html">Twitter</a>
             </div>
-
-            <div class="form-group">
-                <label for="phone">Số điện thoại:</label>
-                <input  placeholder="Nhập số điện thoại của bạn" required>
+            <div class="footer-email-form">
+              <h2>Join our newsletter</h2>
+              <input type="email" placeholder="Enter your email address" id="footer-email" />
+              <input type="Submit" value="Sign up" id="footer-email-btn" />
             </div>
-
-            <button class="donate-button">Donate</button>
-        </form>
-    </div>
+          </div>
+        </div>
+      
+        <div id="backend">
+          <i class="fa-sharp fa-solid fa-chevron-up"></i>
+        </div>
+      
+        <script src="javascript/backtop.js"></script>
+      </section>
 </body>
 </html>

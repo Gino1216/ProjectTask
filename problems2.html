@@ -3,6 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="thanh.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"></script>
     <title>Những Thiệt Thòi Của Trẻ Em</title>
     <style>
        * { 
@@ -151,8 +158,56 @@ div img {
         }
     </script>
 </head>
-<body>
     <body>
+        <div id="wrapper">
+            <div id="header">
+              <img src="image/logo.png" alt="">
+              <div id="menu">
+                <div class="item item_bottom">
+                  <a href="index.html">HOME</a>
+                </div>
+                <div class="item">
+                  <a href="about us.html">ABOUT US</a>
+                </div>
+                <div class="item">
+                  <a href="ACTIVITI.html">ACTIVITI AND DONATE</a>
+                </div>
+                <div class="item item_world ">
+                  <a href="today in world.html">TODAY</a>
+                  <!-- <div class="item_city">
+                    <div class="city"><a href="new york.html">NEW YORK</a></div>
+                    <div class="city"><a href="tokyo.html">TOKYO</a></div>
+                    <div class="city"><a href="sydney.html">SYDNEY</a></div>
+                    <div class="city"><a href="paris.html">PARIS</a></div>
+                    <div class="city"><a href="moskva.html">MOSKVA</a></div>
+                  </div> -->
+                </div>
+                <div class="item">
+                  <a href="check.html">CHECK</a>
+                </div>
+                <div class="item">
+                  <a href="contact us.html">CONTACT US</a>
+                </div>
+              </div>
+              <form action="" id="search" onsubmit="return searchFunction();">
+                <input type="text" id="search_text" placeholder="Search here..." required>
+                <button id="search_btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+              </form>
+            </div>
+            <div class="parent-icon">
+              <div class="icon-menu-open">
+                <i class="fas fa-bars fa-lg"></i>
+              </div>
+              <div class="icon-menu-close">
+                <i class="fas fa-times fa-lg"></i>
+              </div>
+            </div>
+          </div>
+<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
+<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
+<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
+
+
         <section style="padding: 60px;">
             <h1 class="tieude">Những Thiệt Thòi Của Trẻ Em Không Được Tiếp Cận Giáo Dục và Y Tế</h1>
             <div class="content1">
@@ -242,41 +297,76 @@ div img {
                       <p>Chúng tôi kêu gọi bạn hãy tham gia cùng chúng tôi trong hành trình này. Những gì bạn làm hôm nay có thể tạo ra những thay đổi lớn lao cho đời sống của những đứa trẻ kém may mắn. Bạn có thể quyên góp bằng nhiều cách khác nhau:</p>
                       
             </section>
-                
-        
+<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
+<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
+<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
         </section>
+        <h1>Cách thức quyên góp và hỗ trợ trẻ em</h1>
+    <section class="phandonate">
+        <div class="donation-container">
+          <h2>Make a Donation</h2>
+          <form class="donation-form" onsubmit="event.preventDefault(); alert('Thank you for your donation!');">
+            
+            <input type="number"  placeholder="Enter amount" required>
+        
+           
+            <input type="text" placeholder="Enter your name" required>
+        
+            
+            <input type="text" placeholder="Enter your address" required>
+        
+            
+            <input type="text"  placeholder="Enter your phone number" required>
+        
+            <button type="submit" class="donation-button">Donate</button>
+          </form>
+        </div>
+      
+      </section>
+      <section class="noidungcuoi">
+        <div class="footer-container">
+          <div class="footer">
+            <div class="footer-row-1">
+              <h2>About US</h2>
+              <a href="about us.html">Blog</a>
+              <a href="about us.html">Demo</a>
+              <a href="about us.html">Customer</a>
+              <a href="about us.html">Terms of Service</a>
+            </div>
+      
+            <div class="footer-row-1">
+              <h2>Contact US</h2>
+              <a href="contact us.html">Jobs</a>
+              <a href="contact us.html">Support</a>
+              <a href="contact us.html">Contact</a>
+              <a href="contact us.html">Sponsorships</a>
+            </div>
+      
+            <div class="footer-row-1">
+              <h2>Social Media</h2>
+              <a href="index.html">Instagram</a>
+              <a href="index.html">Facebook</a>
+              <a href="index.html">Youtube</a>
+              <a href="index.html">Twitter</a>
+            </div>
+            <div class="footer-email-form">
+              <h2>Join our newsletter</h2>
+              <input type="email" placeholder="Enter your email address" id="footer-email" />
+              <input type="Submit" value="Sign up" id="footer-email-btn" />
+            </div>
+          </div>
+        </div>
+      
+        <div id="backend">
+          <i class="fa-sharp fa-solid fa-chevron-up"></i>
+        </div>
+      
+        <script src="javascript/backtop.js"></script>
+      </section>
     
    
 
-        <section class="giaoduc">
-            <h1>Cách thức quyên góp và hỗ trợ trẻ em</h1>
-            <div class="donate-container">
-                <h2>hỗ trợ</h2>
-                <form onsubmit="thankYouMessage(); return false;">
-                    <div class="form-group">
-                        <label for="amount">Số tiền muốn hỗ trợ(VNĐ):</label>
-                        <input  placeholder="Nhập số tiền" required>
-                    </div>
-        
-                    <div class="form-group">
-                        <label for="name">Họ và tên:</label>
-                        <input  placeholder="Nhập họ tên của bạn" required>
-                    </div>
-        
-                    <div class="form-group">
-                        <label for="address">Địa chỉ:</label>
-                        <input  placeholder="Nhập địa chỉ của bạn" required>
-                    </div>
-        
-                    <div class="form-group">
-                        <label for="phone">Số điện thoại:</label>
-                        <input  placeholder="Nhập số điện thoại của bạn" required>
-                    </div>
-        
-                    <button  class="donate-button">Donate</button>
-                </form>
-            </div>
-        </section>
-    </section>
+       
+   
 </body>
 </html>
