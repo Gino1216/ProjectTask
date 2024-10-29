@@ -60,7 +60,7 @@ max-width: 100%; /* Giới hạn chiều rộng của khung */
     display: flex; 
     flex-direction: column;
     max-width: 23%;/* chỉnh to nhỏ cột 2 */
-    height: 80vh;/* chỉnh độ dài cột 2 */
+    height:67vh;/* chỉnh độ dài cột 2 */
     transition: all 0.3s ease;
     overflow: hidden;
     align-items: center;
@@ -126,7 +126,7 @@ div.noidunghang1 a{
 .noidunghang12{
   display: flex;
   max-width: 100%;/* chỉnh khung nội dung */
-    height: 90vh;/* chỉnh khung ảnh  */
+    height: 67vh;/* chỉnh khung ảnh  */
     box-shadow: 0px 10px 20px rgba(80, 80, 80, 0.4), 0px 20px 40px rgba(128, 128, 128, 0.2);
     transition: all 0.3s ease;
 
@@ -174,8 +174,8 @@ gap: 20px;
     align-items: center;
   }
   .buttoncuathanh{
-    padding: 20px 80px;
-    margin: 20px;
+    padding: 20px 80px;   /* tăng độ rộng bên trong bút  */
+    margin: 20px;  /* khoảng cách các nút */
     border-radius: 20px;
     background-color: #4da6ff; 
     color: white; 
@@ -199,16 +199,37 @@ gap: 20px;
 .noidungcuoi{
   margin-top: 30px;
 }
+/* phần moi donate */
+.moidonate{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 70%; /* chỉnh chiều rộng nội dung  */
+  color: #5D5D5D;
+  font-size: medium;
+}
+.moidonate hr {
+  width:50%; /* chỉnh chiều rộng dòng kẻ */
+  height: 3px; /* chỉnh đô dày dòng kẻ  */
+  background-color: #3399ff;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+
 /* donate */
 .phandonate{
-  margin-top: 100px;
+  margin-top: 70px;
   margin-bottom: 70px;
   display: flex;
   justify-content: center;
 }
   /* Basic styling for the form */
   .donation-container {
-    max-width: 100%;
+    max-width: 100%; /* chỉnh độ rộng phần doante  */
     padding: 20px;
     background: #f3f8ff;/*chỉnh màu */
     border-radius: 10px;
@@ -225,8 +246,8 @@ gap: 20px;
 
   .donation-form input[type="text"],
   .donation-form input[type="number"] {
-    width: 100%;
-    padding: 20px;
+    width: 100%;/* Chỉnh chiều rộng phần nhập donaate  */
+    padding: 20px; /* Chỉnh chiều dài phần nhập donaate  */
     margin-bottom: 30px;
     border: 1px solid #ddd;/*màu khung cho phần điền */
     border-radius: 5px;
