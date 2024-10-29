@@ -60,6 +60,53 @@
   </div>
 
   <div id="body">
+    <div class="containerbaner">
+      <!-- Phần chứa hình ảnh bên trái -->
+      <div class="image-container">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="image/member/UNI642896.png" alt="Hình ảnh 1">
+          </div>
+          <div class="mySlides fade">
+            <img src="https://cdn.discordapp.com/attachments/1299026523172372532/1300854345377779763/images616898_tre_em.png?ex=67225a84&is=67210904&hm=0c3b5b1805043dd740f442650f3e90f357cd6ff1357ccf90b02f26898cf1538d&" alt="Hình ảnh 2">
+          </div>
+          <div class="mySlides fade">
+            <img src="https://cdn.discordapp.com/attachments/1299026523172372532/1300854297982009415/Situation20280329.png?ex=67225a79&is=672108f9&hm=10a7ccebc527c5e9d7afa58a3b707bae25eeff2167bd9c4ddd6ee97f86d30142&" alt="Hình ảnh 3">
+          </div>
+        </div>
+      </div>
+    
+      <!-- Phần chứa nội dung bên phải -->
+      <div class="content">
+        <h1>Cứu trợ khẩn cấp các khu vực bị ảnh hưởng bởi Bão Yagi</h1>
+        <p>Cập nhật về hậu quả của cơn bão có sức tàn phá mạnh nhất trong 70 năm qua tại Việt Nam và hoạt động cứu trợ của UNICEF.</p>
+        <a href="#" class="button">Tìm hiểu thêm</a>
+      </div>
+    </div>
+    
+    <script>
+      let slideIndex = 0;
+      showSlides();
+    
+      function showSlides() {
+        const slides = document.getElementsByClassName("mySlides");
+        for (let i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none"; // Ẩn tất cả các hình ảnh
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1; // Đặt lại chỉ số nếu lớn hơn số lượng hình ảnh
+        }
+        slides[slideIndex - 1].style.display = "block"; // Hiện hình ảnh hiện tại
+        setTimeout(showSlides, 3000); // Thay đổi hình ảnh mỗi 3 giây
+      }
+    </script>
+    <div id="startcontent">
+      <H2 style="    max-width: 1200px;
+      margin: 0px auto;
+      line-height: 50px; text-align: center;">Tin Tức</H2>
+    </div>
+    <div class="body">
     <div id="content_header">
       <div class="content_part1">
         <div class="content_part1_img">
@@ -382,6 +429,7 @@
   </div>
 
   <script src="javascript/backtop.js"></script>
+</div>
 </body>
 
 </html>

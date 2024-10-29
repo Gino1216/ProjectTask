@@ -1,6 +1,6 @@
 /* Reset cơ bản */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #f9f9f9;
     color: #333;
     padding: 0;
@@ -10,6 +10,7 @@ body {
     flex-direction: column;
     margin: 0;
 }
+
 
 /* Container chính */
 .container {
