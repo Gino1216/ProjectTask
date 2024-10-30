@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảo vệ Trẻ em - Tương lai của Chúng ta</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="thanh.css">
+    
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"></script>
+    <style>
+        /* Reset và thiết lập chung */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fafafa;
+            color: #4a4a4a;
+            line-height: 1.7;
+            font-size: large;
+        }
+        /* Header */
+        
+        header h1 {
+            font-size: 1.8em;
+            margin-bottom: 5px;
+        }
+        .subheadingthanh1 {
+            font-size: 1em;
+            color: #555;
+            margin-top: 5px;
+        }
+        /* Container bài báo */
+        .contentthanh1 {
+            max-width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Các phần của bài báo */
+        section {
+            margin-bottom: 20px;
+        }
+        section h2 {
+            font-size: 1.4em;
+            color: #4a90e2;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            border-left: 4px solid #f9b2b2;
+            padding-left: 10px;
+        }
+        /* Hình ảnh minh họa */
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-top: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 3px 6px rgba(70, 69, 69, 0.1);
+ 
+        }
+        /* Kết luận */
+        .conclusion {
+            font-weight: bold;
+            color: #4a4a4a;
+            background-color: #f2f8fb;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        li{
+            list-style: circle;
+        }
+        .nutancuathanh{
+    padding: 20px 80px;   /* tăng độ rộng bên trong bút  */
+    margin: 20px;  /* khoảng cách các nút */
+    border-radius: 20px;
+    background-color: #4da6ff; 
+    color: white; 
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Tạo hiệu ứng nổi */
+    transition: background-color 0.3s, transform 0.2s;
+   
+  }
+  .nutancuathanh:hover {
+    background-color: #3399ff; 
+    transform: scale(1.05); 
+  }
+  
+  .nutancuathanh:active {
+    background-color: #1a8cff; 
+    transform: scale(0.7); 
+  }
+    </style>
+</head>
+<body>
+
+    <div id="wrapper">
+        <div id="header">
+          <img src="image/logo.png" alt="">
+          <div id="menu">
+            <div class="item ">
+              <a href="index.html">HOME</a>
+            </div>
+            <div class="item">
+              <a href="about us.html">ABOUT US</a>
+            </div>
+            <div class="item item_bottom">
+              <a href="ACTIVITI.html">ACTIVITI AND DONATE</a>
+            </div>
+            <div class="item item_world ">
+              <a href="today in world.html">TODAY</a>
+              <!-- <div class="item_city">
+                <div class="city"><a href="new york.html">NEW YORK</a></div>
+                <div class="city"><a href="tokyo.html">TOKYO</a></div>
+                <div class="city"><a href="sydney.html">SYDNEY</a></div>
+                <div class="city"><a href="paris.html">PARIS</a></div>
+                <div class="city"><a href="moskva.html">MOSKVA</a></div>
+              </div> -->
+            </div>
+            <div class="item">
+              <a href="check.html">CHECK</a>
+            </div>
+            <div class="item">
+              <a href="contact us.html">CONTACT US</a>
+            </div>
+          </div>
+          <form action="" id="search" onsubmit="return searchFunction();">
+            <input type="text" id="search_text" placeholder="Search here..." required>
+            <button id="search_btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+        </div>
+        <div class="parent-icon">
+          <div class="icon-menu-open">
+            <i class="fas fa-bars fa-lg"></i>
+          </div>
+          <div class="icon-menu-close">
+            <i class="fas fa-times fa-lg"></i>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="contentthanh1">
+        <section class="intro">
+            <h1>4. Hướng dẫn trẻ em tự bảo vệ bản thân</h1>
+            <p>Trẻ em là những người dễ bị tổn thương trong xã hội hiện nay, đặc biệt là trước các mối đe dọa như xâm hại, bạo lực hay lạm dụng. Việc dạy cho trẻ những kỹ năng tự bảo vệ bản thân không chỉ giúp các em có thêm kiến thức và sự tự tin mà còn tạo ra một môi trường an toàn hơn cho chính mình. Dưới đây là một số hướng dẫn cụ thể giúp trẻ em tự bảo vệ bản thân.</p>
+            <img src="https://1.bp.blogspot.com/-KgplqFO2Phs/X0fLiJjJmxI/AAAAAAAAA_c/L2h5hJp20MM9m-SzxJ2CSfcG3pkSUOTEQCLcBGAsYHQ/w1200-h630-p-k-no-nu/day-be-ky-nang-tu-bao-ve-1.jpg" alt="">
+        </section>
+        <section>
+            <div style="display: flex; flex-direction: column; margin-left: 30px;">
+                
+                    <h2>1. Nhận diện nguy hiểm</h2>
+                    <p>Đầu tiên, trẻ em cần được giáo dục để nhận diện các tình huống nguy hiểm. Phụ huynh và giáo viên có thể giúp trẻ hiểu rõ về những mối đe dọa có thể xảy ra, bao gồm:</p>
+                    <p>- Người lạ: Trẻ nên được dạy rằng không phải tất cả mọi người đều tốt và họ cần phải cảnh giác với những người không quen biết.</p>
+                    <p>- Tình huống không an toàn: Trẻ cần học cách nhận biết những tình huống bất thường, như việc ai đó cố gắng kéo mình ra khỏi nơi công cộng hay đề nghị những điều không phù hợp.</p>
+                </div>
+                </section>
+                <section>
+                <div  style="display: flex; flex-direction: column; margin-left: 30px;">
+                    <h2>2. Kỹ năng giao tiếp và nói "không"</h2>
+                    <p>Trẻ em nên được khuyến khích phát triển kỹ năng giao tiếp, đặc biệt là trong việc diễn đạt cảm xúc và ý kiến của mình. Đây là một số điểm quan trọng:</p>
+                    <p>- Nói "không": Trẻ cần hiểu rằng việc từ chối một yêu cầu hoặc hành động mà chúng cảm thấy không thoải mái là hoàn toàn hợp lý. Việc dạy trẻ cách nói "không" một cách dứt khoát có thể giúp trẻ tự bảo vệ mình trong các tình huống không an toàn.</p>
+                    <p>- Tìm kiếm sự trợ giúp: Trẻ nên được hướng dẫn tìm kiếm sự giúp đỡ từ người lớn hoặc những người mà chúng tin tưởng khi gặp phải tình huống nguy hiểm.</p>
+                </div>
+            </section>
+                <section>
+                <div  style="display: flex; flex-direction: column; margin-left: 30px;">
+                    <h2>3. Tự vệ thể chất</h2>
+                    <p>Trong một số trường hợp, việc tự vệ thể chất có thể là cần thiết. Các bậc phụ huynh có thể xem xét cho trẻ tham gia các khóa học tự vệ. Điều này không chỉ giúp trẻ học cách bảo vệ bản thân mà còn nâng cao sự tự tin và sức khỏe tổng thể. Một số hoạt động thể chất như võ thuật có thể giúp trẻ:</p>
+                    <p>- Tăng cường sức mạnh và sự linh hoạt: Các hoạt động này giúp trẻ cải thiện sức khỏe và sự tự tin trong bản thân.</p>
+                    <p>- Giúp trẻ phát triển phản xạ tốt: Trẻ sẽ học cách phản ứng nhanh chóng trong những tình huống nguy hiểm, từ đó bảo vệ bản thân tốt hơn.</p>
+                <img src="https://akcfitness.com.vn/wp-content/uploads/2023/12/z4980769602809_dfdc8aa20c1278686c0dbc063337e79d.jpg" alt="">
+                </div>
+            </section>
+                <section>
+                <div  style="display: flex; flex-direction: column; margin-left: 30px;">
+                    <h2>4. Xây dựng mạng lưới hỗ trợ</h2>
+                    <p>Khuyến khích trẻ xây dựng mối quan hệ với bạn bè và người lớn đáng tin cậy cũng rất quan trọng. Một mạng lưới hỗ trợ mạnh mẽ có thể cung cấp cho trẻ cảm giác an toàn và bảo vệ khi cần thiết. Dưới đây là một số điểm quan trọng:</p>
+                    <p>- Kết nối với bạn bè: Trẻ nên biết rằng việc có bạn bè bên cạnh sẽ giúp chúng cảm thấy an toàn hơn trong nhiều tình huống.</p>
+                    <p>- Người lớn tin cậy: Trẻ nên được giáo dục để xác định những người lớn mà chúng có thể tin tưởng, như giáo viên, cha mẹ hoặc các thành viên trong gia đình, để có thể chia sẻ bất kỳ lo ngại nào mà chúng gặp phải.</p>
+                </div>
+            </section>
+                <section>
+                    
+                    <div  style="display: flex; flex-direction: column; margin-left: 30px;">
+                        <h2>5. Sử dụng công nghệ một cách thông minh</h2>
+                        <p>Trong thế giới công nghệ hiện đại, việc dạy trẻ cách sử dụng công nghệ an toàn cũng là một phần quan trọng trong việc tự bảo vệ bản thân. Cha mẹ có thể:</p>
+                        <p>- Giáo dục trẻ về mạng xã hội: Dạy trẻ không nên chia sẻ thông tin cá nhân trên mạng xã hội và cảnh giác với những người lạ kết bạn trực tuyến.</p>
+                        <p>- Sử dụng ứng dụng an toàn: Khuyến khích trẻ sử dụng các ứng dụng có tính năng bảo mật cao và cho phép cha mẹ theo dõi hoạt động trực tuyến của trẻ.</p>
+                    
+                    <img src="https://afamilycdn.com/150157425591193600/2023/2/16/cho-tre-lam-chu-cong-nghe-1-2393-1676528704358862429189.jpg" alt=""></div>
+                
+            </section>
+                
+       
+    
+        <section class="conclusion">
+            <p>Việc tự bảo vệ bản thân là một kỹ năng cần thiết mà trẻ em cần được học hỏi và rèn luyện từ sớm. Bằng cách cung cấp cho trẻ những kiến thức và kỹ năng cần thiết, chúng ta không chỉ giúp trẻ an toàn mà còn tạo điều kiện cho trẻ phát triển một cách tự tin và độc lập. Hãy nhớ rằng, bảo vệ trẻ em không chỉ là trách nhiệm của cha mẹ mà còn là của cả cộng đồng. Cùng nhau, chúng ta có thể xây dựng một môi trường an toàn hơn cho tất cả trẻ em.</p>
+        </section>
+    </div></div>
+    
+    
+
+<section style="display: flex;justify-content: center;align-items: center;">
+  <button class="nutancuathanh" onclick="goBack()"> Trở lại trang trước</button>
+
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
+</section>
+
+
+    <div class="footer-container">
+        <div class="footer">
+          <div class="footer-row-1">
+            <h2>About US</h2>
+            <a href="about us.html">Blog</a>
+            <a href="about us.html">Demo</a>
+            <a href="about us.html">Customer</a>
+            <a href="about us.html">Terms of Service</a>
+          </div>
+    
+          <div class="footer-row-1">
+            <h2>Contact US</h2>
+            <a href="contact us.html">Jobs</a>
+            <a href="contact us.html">Support</a>
+            <a href="contact us.html">Contact</a>
+            <a href="contact us.html">Sponsorships</a>
+          </div>
+    
+          <div class="footer-row-1">
+            <h2>Social Media</h2>
+            <a href="index.html">Instagram</a>
+            <a href="index.html">Facebook</a>
+            <a href="index.html">Youtube</a>
+            <a href="index.html">Twitter</a>
+          </div>
+          <div class="footer-email-form">
+            <h2>Join our newsletter</h2>
+            <input type="email" placeholder="Enter your email address" id="footer-email" />
+            <input type="Submit" value="Sign up" id="footer-email-btn" />
+          </div>
+        </div>
+      </div>
+</body>
+</html>
