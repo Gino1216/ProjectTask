@@ -60,7 +60,7 @@ max-width: 100%; /* Giới hạn chiều rộng của khung */
     display: flex; 
     flex-direction: column;
     max-width: 23%;/* chỉnh to nhỏ cột 2 */
-    height:67vh;/* chỉnh độ dài cột 2 */
+    height:75vh;/* chỉnh độ dài cột 2 */
     transition: all 0.3s ease;
     overflow: hidden;
     align-items: center;

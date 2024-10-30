@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảo vệ Trẻ em - Tương lai của Chúng ta</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="thanh.css">
+    
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"></script>
+    <style>
+        /* Reset và thiết lập chung */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fafafa;
+            color: #4a4a4a;
+            line-height: 1.7;
+            font-size: large;
+        }
+        /* Header */
+        
+        header h1 {
+            font-size: 1.8em;
+            margin-bottom: 5px;
+        }
+        .subheading {
+            font-size: 1em;
+            color: #555;
+            margin-top: 5px;
+        }
+        /* Container bài báo */
+        .content {
+            max-width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Các phần của bài báo */
+        section {
+            margin-bottom: 20px;
+        }
+        section h2 {
+            font-size: 1.4em;
+            color: #4a90e2;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            border-left: 4px solid #f9b2b2;
+            padding-left: 10px;
+        }
+        /* Hình ảnh minh họa */
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-top: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 3px 6px rgba(70, 69, 69, 0.1);
+ 
+        }
+        /* Kết luận */
+        .conclusion {
+            font-weight: bold;
+            color: #4a4a4a;
+            background-color: #f2f8fb;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        li{
+            list-style: circle;
+        }
+        .nutancuathanh{
+    padding: 20px 80px;   /* tăng độ rộng bên trong bút  */
+    margin: 20px;  /* khoảng cách các nút */
+    border-radius: 20px;
+    background-color: #4da6ff; 
+    color: white; 
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Tạo hiệu ứng nổi */
+    transition: background-color 0.3s, transform 0.2s;
+   
+  }
+  .nutancuathanh:hover {
+    background-color: #3399ff; 
+    transform: scale(1.05); 
+  }
+  
+  .nutancuathanh:active {
+    background-color: #1a8cff; 
+    transform: scale(0.7); 
+  }
+    </style>
+</head>
+<body>
+
+    <div id="wrapper">
+        <div id="header">
+          <img src="image/logo.png" alt="">
+          <div id="menu">
+            <div class="item ">
+              <a href="index.html">HOME</a>
+            </div>
+            <div class="item">
+              <a href="about us.html">ABOUT US</a>
+            </div>
+            <div class="item item_bottom">
+              <a href="ACTIVITI.html">ACTIVITI AND DONATE</a>
+            </div>
+            <div class="item item_world ">
+              <a href="today in world.html">TODAY</a>
+              <!-- <div class="item_city">
+                <div class="city"><a href="new york.html">NEW YORK</a></div>
+                <div class="city"><a href="tokyo.html">TOKYO</a></div>
+                <div class="city"><a href="sydney.html">SYDNEY</a></div>
+                <div class="city"><a href="paris.html">PARIS</a></div>
+                <div class="city"><a href="moskva.html">MOSKVA</a></div>
+              </div> -->
+            </div>
+            <div class="item">
+              <a href="check.html">CHECK</a>
+            </div>
+            <div class="item">
+              <a href="contact us.html">CONTACT US</a>
+            </div>
+          </div>
+          <form action="" id="search" onsubmit="return searchFunction();">
+            <input type="text" id="search_text" placeholder="Search here..." required>
+            <button id="search_btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+        </div>
+        <div class="parent-icon">
+          <div class="icon-menu-open">
+            <i class="fas fa-bars fa-lg"></i>
+          </div>
+          <div class="icon-menu-close">
+            <i class="fas fa-times fa-lg"></i>
+          </div>
+        </div>
+      </div>
+
+
+
+    <div class="content">
+        
+
+        <section class="intro">
+            <h1>Cách giáo dục trẻ em hiện nay: Những xu hướng và phương pháp hiệu quả</h1>
+            <img src="https://img.giaoduc.net.vn/Uploaded/2020/edxwpcqdh/2018_12_24/gv.jpg" alt="Hình ảnh minh họa về bảo vệ trẻ em">
+            <div>Trong bối cảnh xã hội hiện đại, cách giáo dục trẻ em đã có nhiều thay đổi để phù hợp với nhu cầu phát triển của thế hệ
+               mới. Các phương pháp giáo dục truyền thống đang dần được thay thế hoặc bổ sung bằng các phương pháp hiện đại hơn, nhằm đáp
+                ứng tốt hơn những thách thức mà trẻ em phải đối mặt trong thế giới ngày nay. Bài viết này sẽ điểm qua một số phương pháp giáo
+                 dục nổi bật hiện nay, cùng với những ưu điểm và nhược điểm của chúng.</div>
+        </section>
+
+        <section>
+            <h2>1. Giáo dục lấy trẻ làm trung tâm</h2>
+            <p>Một trong những xu hướng đáng chú ý trong giáo dục hiện nay là phương pháp giáo dục lấy trẻ làm trung tâm. Phương pháp này nhấn 
+              mạnh tầm quan trọng của việc cá nhân hóa việc học tập, nơi trẻ em được khuyến khích tham gia vào quá trình học hỏi một cách chủ động.
+               Giáo viên không chỉ đóng vai trò là người truyền đạt kiến thức mà còn là người hướng dẫn, hỗ trợ trẻ khám phá và phát triển tiềm năng
+                của mình.</p>
+                <div style="display: flex;flex-direction: column;margin-left: 30px;">
+                  <div>
+                    <ul> <h3>Ưu điểm:</h3>
+                  <li> Khuyến khích sự sáng tạo và tư duy độc lập ở trẻ.</li>
+                  <li>Tăng cường sự tự tin và khả năng giao tiếp của trẻ.</li>
+                  <li>Giúp trẻ hình thành những kỹ năng sống cần thiết.</li>
+                  </ul></div>
+                  <ul>
+                  <div><h3>Nhược điểm:</h3>
+                  <li> Đòi hỏi giáo viên phải có kỹ năng cao trong việc quản lý lớp học và thiết kế hoạt động học tập phù hợp.</li>
+                  <li>Có thể khó khăn trong việc áp dụng đồng bộ tại các trường công lập với quy mô lớn.</li>
+                  </ul></div>     
+          </section>
+
+
+          <section>
+            <h2>2.Phương pháp Montessori</h2>
+            <p>Phương pháp Montessori, được phát triển bởi bác sĩ Maria Montessori, đã trở thành một trong những phương pháp giáo dục phổ biến trên toàn thế giới. Phương pháp này tập trung vào việc tạo ra một môi trường học tập tự do và khuyến khích trẻ khám phá theo sở thích và tốc độ của riêng mình.</p>
+                <div style="display: flex;flex-direction: column;margin-left: 30px;">
+                  <div>
+                  <ul><h3>Ưu điểm:</h3>
+                  <li> Trẻ em học được cách tự quản lý và chịu trách nhiệm về việc học của bản thân.</li>
+                  <li>Phát triển kỹ năng xã hội thông qua việc tương tác với bạn bè.</li> 
+                  <li>Tạo ra niềm yêu thích học tập từ sớm.</li>
+                  </ul></div>
+                  <ul>
+                  <div><h3>Nhược điểm:</h3>
+                  <li> Cần đầu tư lớn vào tài liệu và thiết bị học tập.</li>
+                  <li>Không phải ai cũng quen thuộc với phương pháp này, nên việc triển khai có thể gặp khó khăn.</li>
+                  </ul></div>     
+          </section>
+
+
+          <section>
+            <section>
+              <h2>3.Phương pháp STEAM</h2>
+              <p>Giáo dục STEAM (Khoa học, Công nghệ, Kỹ thuật, Nghệ thuật và Toán học) đã thu hút sự chú ý mạnh mẽ trong những năm gần đây. Phương pháp này không chỉ tập trung vào việc dạy kiến thức mà còn khuyến khích sự sáng tạo và tư duy phản biện. STEAM giúp trẻ em kết nối giữa lý thuyết và thực tiễn thông qua các dự án và hoạt động thực hành.</p>
+                  <div style="display: flex;flex-direction: column;margin-left: 30px;">
+                    <div>
+                    <ul><h3>Ưu điểm:</h3>
+                    <li>Tăng cường khả năng giải quyết vấn đề và tư duy logic.</li>
+                    <li>Khuyến khích sự sáng tạo và khả năng làm việc nhóm.</li>
+                    <li>Phù hợp với xu hướng phát triển nghề nghiệp trong tương lai</li>
+                    </ul></div>
+                    <ul>
+                    <div><h3>Nhược điểm:</h3>
+                    <li> Cần có sự chuẩn bị kỹ lưỡng và tài nguyên đầy đủ để triển khai.</li>
+                    <li>Có thể gây khó khăn cho một số trẻ không thích hoạt động nhóm.</li>
+                    </ul></div>     
+            </section>
+
+
+            
+              <section>
+                <h2>4. Giáo dục trực tuyến</h2>
+                <p>Sự phát triển của công nghệ thông tin đã mang lại nhiều cơ hội mới cho giáo dục, trong đó có giáo dục trực tuyến. Đặc biệt trong thời kỳ dịch bệnh COVID-19, hình thức học trực tuyến đã trở nên phổ biến. Học trực tuyến không chỉ giúp trẻ em học tập từ xa mà còn giúp trẻ phát triển kỹ năng công nghệ cần thiết trong thời đại số.</p>
+                    <div style="display: flex;flex-direction: column;margin-left: 30px;">
+                      <div>
+                      <ul><h3>Ưu điểm:</h3>
+                      <li>Linh hoạt về thời gian và địa điểm học tập.</li>
+                      <li>Cung cấp nguồn tài liệu phong phú và đa dạng.</li>
+                      <li>Giúp trẻ em phát triển khả năng tự học và tự quản lý thời gian.</li>
+                      </ul></div>
+                      <ul>
+                      <div><h3>Nhược điểm:</h3>
+                      <li>Thiếu sự tương tác trực tiếp giữa giáo viên và học sinh.</li>
+                      <li>Có thể gây ra cảm giác cô đơn, thiếu kết nối xã hội cho trẻ em.</li>
+                      </ul></div>     
+              </section>
+            
+
+        <section class="conclusion">
+            
+          <p>Nhìn chung, cách giáo dục trẻ em hiện nay đang chuyển mình mạnh mẽ với nhiều xu hướng và phương pháp khác nhau. Mỗi phương pháp đều có những ưu và nhược điểm riêng, nhưng điểm chung là đều hướng tới việc phát triển toàn diện cho trẻ em. Cha mẹ, giáo viên và những người làm công tác giáo dục cần phải tìm hiểu và áp dụng các phương pháp phù hợp nhất với từng trẻ, để đảm bảo các em có một nền tảng vững chắc cho tương lai. Sự thay đổi trong giáo dục không chỉ nằm ở phương pháp mà còn ở sự hợp tác chặt chẽ giữa gia đình, nhà trường và xã hội. Chỉ khi tất cả cùng chung tay, trẻ em mới có thể phát triển toàn diện và trở thành những công dân có trách nhiệm trong xã hội.</p>
+       
+        </section>
+        
+    </div>
+    
+
+<section style="display: flex;justify-content: center;align-items: center;">
+  <button class="nutancuathanh" onclick="goBack()"> Trở lại trang trước</button>
+
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
+</section>
+
+
+    <div class="footer-container">
+        <div class="footer">
+          <div class="footer-row-1">
+            <h2>About US</h2>
+            <a href="about us.html">Blog</a>
+            <a href="about us.html">Demo</a>
+            <a href="about us.html">Customer</a>
+            <a href="about us.html">Terms of Service</a>
+          </div>
+    
+          <div class="footer-row-1">
+            <h2>Contact US</h2>
+            <a href="contact us.html">Jobs</a>
+            <a href="contact us.html">Support</a>
+            <a href="contact us.html">Contact</a>
+            <a href="contact us.html">Sponsorships</a>
+          </div>
+    
+          <div class="footer-row-1">
+            <h2>Social Media</h2>
+            <a href="index.html">Instagram</a>
+            <a href="index.html">Facebook</a>
+            <a href="index.html">Youtube</a>
+            <a href="index.html">Twitter</a>
+          </div>
+          <div class="footer-email-form">
+            <h2>Join our newsletter</h2>
+            <input type="email" placeholder="Enter your email address" id="footer-email" />
+            <input type="Submit" value="Sign up" id="footer-email-btn" />
+          </div>
+        </div>
+      </div>
+</body>
+</html>
