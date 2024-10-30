@@ -190,7 +190,7 @@
 }
 
 /* Phần bên phải chứa nội dung */
-.content {
+.contentBaner {
   flex: 1; /* Tỷ lệ cho phần nội dung */
   padding: 40px;
   background-color: #009fe3;
@@ -201,12 +201,12 @@
   height: 70vh; /* Chiều cao mặc định */
 }
 
-.content h1 {
+.contentBaner h1 {
   font-size: 2em;
   margin-bottom: 20px;
 }
 
-.content p {
+.contentBaner p {
   font-size: 1em;
   margin-bottom: 20px;
   line-height: 1.5;
