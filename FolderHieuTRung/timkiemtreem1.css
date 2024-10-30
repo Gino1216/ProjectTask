@@ -1,0 +1,257 @@
+/* Reset cơ bản */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+}
+
+/* Container chính */
+.container {
+    width: 90%;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Tiêu đề chính */
+h1 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+/* Phần bản đồ vùng miền */
+.map-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.map-section h2 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.map-placeholder {
+    border: 2px dashed #007bff;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f1f8ff;
+}
+
+.map-placeholder img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+/* Phần thống kê tóm tắt */
+.summary-section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #eaf4fc;
+    border-left: 5px solid #007bff;
+    border-radius: 8px;
+}
+
+.summary-section h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.summary-section p {
+    font-size: 14px;
+    margin: 4px 0;
+    color: #333;
+}
+
+/* Bộ lọc và các nút */
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.filter-region, .filter-issue {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 150px;
+}
+
+select {
+    padding: 8px;
+    margin-top: 5px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Nhóm nút bấm */
+.button-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.button-group button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+    color: #fff;
+    flex: 1;
+    max-width: 150px;
+}
+
+#show-all-btn {
+    background-color: #007bff;
+}
+
+#show-all-btn:hover {
+    background-color: #0056b3;
+}
+
+#hide-all-btn {
+    background-color: #ff5733;
+}
+
+#hide-all-btn:hover {
+    background-color: #cc462a;
+}
+
+#submit-opinion-btn {
+    background-color: #28a745;
+}
+
+#submit-opinion-btn:hover {
+    background-color: #218838;
+}
+
+/* Danh sách người */
+.person-list {
+    margin-top: 20px;
+    text-align: left;
+}
+
+/* Thẻ thông tin cá nhân */
+.person-card {
+    background-color: #eaeaea;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.person-card h2 {
+    margin-top: 0;
+    color: #0056b3;
+}
+
+/* Phần báo cáo vấn đề */
+.report-section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #eaf4fc;
+    border-left: 5px solid #007bff;
+    border-radius: 8px;
+    display: none; 
+}
+
+.report-section h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.report-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.report-section label {
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.report-section input,
+.report-section select,
+.report-section textarea {
+    padding: 8px;
+    font-size: 14px;
+    margin-top: 5px;
+    border: 1px solid #eaf4fc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Nút gửi trong khung báo cáo */
+.report-section button[type="submit"] {
+    background-color: #eaf4fc;
+    color: #3f1111;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+}
+
+.report-section button[type="submit"]:hover {
+    background-color: #007bff;
+}
+
+/* Điều chỉnh bố cục cho màn hình nhỏ */
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+        box-shadow: none;
+        margin-top: 10px;
+    }
+
+    .filters {
+        flex-direction: column;
+        align-items: stretch;
+        margin-bottom: 15px;
+    }
+
+    .filter-region, .filter-issue {
+        margin-bottom: 10px;
+    }
+
+    .button-group {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .button-group button {
+        width: 100%;
+        padding: 12px 0;
+    }
+
+    .map-placeholder img {
+        max-width: 100%;
+    }
+}
