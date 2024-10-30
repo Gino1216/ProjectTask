@@ -55,19 +55,19 @@ function searchFunction() {
 const menu = [
   {
     label: "HOME",
-    href: "/project/index",
+    href: "/index",
   },
   {
     label: "ABOUT US",
-    href: "/project/about us",
+    href: "/about us",
   },
   {
-    label: "PROBLEMS",
-    href: "/project/PROBLMS",
+    label: "ACTIVITI AND DONATE",
+    href: "/ACTIVITI",
   },
   {
     label: "TODAY",
-    href: "/project/today in world",
+    href: "/today in world",
   },
   {
     label: "CHECK",
@@ -75,7 +75,7 @@ const menu = [
   },
   {
     label: "CONTACT US",
-    href: "/project/contact us",
+    href: "/contact us",
   },
 ];
 
