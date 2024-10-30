@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảo vệ Trẻ em - Tương lai của Chúng ta</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="thanh.css">
+    
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"></script>
+    <style>
+        /* Reset và thiết lập chung */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fafafa;
+            color: #4a4a4a;
+            line-height: 1.7;
+            font-size: large;
+        }
+        /* Header */
+        
+        header h1 {
+            font-size: 1.8em;
+            margin-bottom: 5px;
+        }
+        .subheading {
+            font-size: 1em;
+            color: #555;
+            margin-top: 5px;
+        }
+        /* Container bài báo */
+        .contentthanh1 {
+            max-width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        section {
+            margin-bottom: 20px;}
+        section h2 {
+            font-size: 1.3em;
+            color: #6a8d98;
+            border-left: 4px solid #b56363;
+            padding-left: 10px;
+            margin-bottom: 10px;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        .conclusion {
+            font-weight: bold;
+            color: #333;
+            background-color: #eaeaea;
+            padding: 15px;
+            text-align: center;
+        }
+        li{
+            list-style: circle;
+        }
+        .nutancuathanh{
+    padding: 20px 80px;   /* tăng độ rộng bên trong bút  */
+    margin: 20px;  /* khoảng cách các nút */
+    border-radius: 20px;
+    background-color: #4da6ff; 
+    color: white; 
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Tạo hiệu ứng nổi */
+    transition: background-color 0.3s, transform 0.2s;
+   
+  }
+  .nutancuathanh:hover {
+    background-color: #3399ff; 
+    transform: scale(1.05); 
+  }
+  
+  .nutancuathanh:active {
+    background-color: #1a8cff; 
+    transform: scale(0.7); 
+  }
+    </style>
+</head>
+<body>
+
+    <div id="wrapper">
+        <div id="header">
+          <img src="image/logo.png" alt="">
+          <div id="menu">
+            <div class="item ">
+              <a href="index.html">HOME</a>
+            </div>
+            <div class="item">
+              <a href="about us.html">ABOUT US</a>
+            </div>
+            <div class="item item_bottom">
+              <a href="ACTIVITI.html">ACTIVITI AND DONATE</a>
+            </div>
+            <div class="item item_world ">
+              <a href="today in world.html">TODAY</a>
+              <!-- <div class="item_city">
+                <div class="city"><a href="new york.html">NEW YORK</a></div>
+                <div class="city"><a href="tokyo.html">TOKYO</a></div>
+                <div class="city"><a href="sydney.html">SYDNEY</a></div>
+                <div class="city"><a href="paris.html">PARIS</a></div>
+                <div class="city"><a href="moskva.html">MOSKVA</a></div>
+              </div> -->
+            </div>
+            <div class="item">
+              <a href="check.html">CHECK</a>
+            </div>
+            <div class="item">
+              <a href="contact us.html">CONTACT US</a>
+            </div>
+          </div>
+          <form action="" id="search" onsubmit="return searchFunction();">
+            <input type="text" id="search_text" placeholder="Search here..." required>
+            <button id="search_btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+        </div>
+        <div class="parent-icon">
+          <div class="icon-menu-open">
+            <i class="fas fa-bars fa-lg"></i>
+          </div>
+          <div class="icon-menu-close">
+            <i class="fas fa-times fa-lg"></i>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="contentthanh1">
+        <section class="intro">
+            <h1>Các vấn đề của trẻ em hiện nay</h1>
+            <div>
+                Trẻ em là tương lai của mọi quốc gia, nhưng hiện nay chúng đang phải đối mặt với nhiều vấn đề nghiêm trọng ảnh hưởng đến sự phát triển và cuộc sống của mình. Dưới đây là một số vấn đề chính mà trẻ em đang gặp phải.
+           
+            </div>
+        </section>
+    
+        <section>
+            <h2>1. Bạo lực và xâm hại</h2>
+            <p>Theo UNICEF, bạo lực đối với trẻ em, bao gồm cả bạo lực thể chất, tâm lý và xâm hại tình dục, vẫn diễn ra phổ biến. Hơn 1 tỷ trẻ em toàn cầu đã trải qua ít nhất một hình thức bạo lực trong năm qua. Ở Việt Nam, vấn đề này cũng không kém phần nghiêm trọng, với một nghiên cứu cho thấy khoảng 50% trẻ em cảm thấy không an toàn ở trường học do bạo lực từ bạn bè và giáo viên.</p>
+            <div>
+                Xâm hại trẻ em không chỉ gây tổn thương về thể chất mà còn để lại những vết thương tâm lý sâu sắc, ảnh hưởng đến sự phát triển của trẻ trong suốt cuộc đời. Tình trạng này thường bị che giấu, khiến cho việc phát hiện và can thiệp trở nên khó khăn.
+                
+            </div>
+            <img src="http://luatcongbinh.vn/wp-content/uploads/2021/03/h-1-800x500_c.jpg" alt="">
+        </section>
+    
+        <section>
+            <h2>2. Thiếu hụt giáo dục</h2>
+            <p>Giáo dục là quyền cơ bản của trẻ em, nhưng hiện nay, vẫn còn hàng triệu trẻ em không được tiếp cận giáo dục. Theo báo cáo của UNESCO, gần 258 triệu trẻ em và thanh thiếu niên trên toàn thế giới không đến trường. Tại Việt Nam, tình trạng này chủ yếu ảnh hưởng đến trẻ em ở vùng sâu, vùng xa, nơi điều kiện kinh tế còn khó khăn và cơ sở hạ tầng giáo dục thiếu thốn.</p>
+            <div>
+                Sự thiếu hụt trong giáo dục không chỉ làm giảm cơ hội phát triển của trẻ mà còn dẫn đến các vấn đề xã hội nghiêm trọng, bao gồm nghèo đói và bất bình đẳng. Việc cải thiện hệ thống giáo dục và tạo ra các chương trình hỗ trợ trẻ em ở các vùng khó khăn là rất cần thiết.
+            </div>
+            <img src="http://phunuvietnam.mediacdn.vn/media/news/b095b36610d373f9d51d77729f8a6f33/20180524094831-img-4970.JPG" alt="">
+        </section>
+    
+        <section>
+            <h2>3. Sức khỏe tâm thần</h2>
+            <p>Vấn đề sức khỏe tâm thần ở trẻ em đang ngày càng được chú ý. Nhiều nghiên cứu chỉ ra rằng tỷ lệ trẻ em mắc các vấn đề về tâm lý, như lo âu, trầm cảm, đang gia tăng. Theo một khảo sát của Bộ Y tế, gần 15% trẻ em từ 6-17 tuổi ở Việt Nam có các triệu chứng của rối loạn tâm thần.</p>
+            <div>
+                Nguyên nhân của tình trạng này có thể đến từ nhiều yếu tố, bao gồm áp lực học tập, bạo lực gia đình, và môi trường sống không an toàn. Việc cung cấp các dịch vụ tâm lý cho trẻ em, cũng như tăng cường nhận thức về sức khỏe tâm thần trong cộng đồng là rất quan trọng.
+            </div>
+        </section>
+    
+        <section>
+            <h2>4. Đói nghèo và thiếu thốn</h2>
+            <p>Tình trạng nghèo đói vẫn là một vấn đề lớn đối với trẻ em trên toàn thế giới. Theo báo cáo của UNICEF, khoảng 356 triệu trẻ em đang sống trong điều kiện nghèo đói cực độ. Tại Việt Nam, tỷ lệ trẻ em sống trong các gia đình nghèo cũng chưa được giải quyết triệt để, đặc biệt ở những vùng miền núi và nông thôn.</p>
+            <div>
+                Thiếu thốn về tài chính ảnh hưởng đến khả năng tiếp cận giáo dục, chăm sóc sức khỏe, và dinh dưỡng. Trẻ em ở những gia đình nghèo thường không có cơ hội để phát triển toàn diện, dẫn đến một vòng luẩn quẩn của nghèo đói.
+            </div>
+            <img src="https://images.baodantoc.vn/uploads/2021/Th%C3%A1ng%207/Ng%C3%A0y_27/%E1%BA%A2NH%20CH%E1%BB%88NH/A1%20(1)%20(1)%20s%C6%B0ae.jpg" alt="">
+        </section>
+    
+        <section>
+            <h2>5. Khí hậu và môi trường</h2>
+            <p>Biến đổi khí hậu cũng đang ảnh hưởng đến cuộc sống của trẻ em. Hàng triệu trẻ em phải đối mặt với các vấn đề như ô nhiễm, thiên tai và biến đổi khí hậu. Theo một nghiên cứu của UNICEF, khoảng 1 tỷ trẻ em sống trong các khu vực dễ bị ảnh hưởng bởi biến đổi khí hậu.</p>
+            <div>
+                Các tác động của khí hậu không chỉ ảnh hưởng đến sức khỏe mà còn đến giáo dục và sinh kế của trẻ em. Việc phát triển các chiến lược ứng phó với biến đổi khí hậu và bảo vệ môi trường là cực kỳ quan trọng để đảm bảo an toàn cho các thế hệ tương lai.
+            </div>
+        </section>
+    
+        <section class="conclusion">
+            <div>
+                <h2>Kết luận</h2>
+                Các vấn đề mà trẻ em hiện nay đang phải đối mặt rất đa dạng và phức tạp. Để bảo vệ quyền lợi và tạo điều kiện cho trẻ em phát triển toàn diện, các tổ chức chính phủ, phi chính phủ và cộng đồng cần có những hành động cụ thể và hiệu quả. Việc tăng cường giáo dục, chăm sóc sức khỏe, bảo vệ trẻ em khỏi bạo lực và xâm hại, cùng với việc chống đói nghèo là những yếu tố quan trọng để xây dựng một tương lai tốt đẹp hơn cho trẻ em.
+                Nếu bạn quan tâm đến vấn đề này, hãy tìm hiểu thêm về các tổ chức bảo vệ trẻ em và cách bạn có thể đóng góp cho công cuộc bảo vệ quyền trẻ em.
+            </div>
+        </section>
+    </div>
+    
+
+
+    <section style="display: flex;justify-content: center;align-items: center;">
+        <button class="nutancuathanh" onclick="goBack()"> Trở lại trang trước</button>
+      
+      <script>
+      function goBack() {
+          window.history.back();
+      }
+      </script>
+      </section>
+
+
+
+    <div class="footer-container">
+        <div class="footer">
+          <div class="footer-row-1">
+            <h2>About US</h2>
+            <a href="about us.html">Blog</a>
+            <a href="about us.html">Demo</a>
+            <a href="about us.html">Customer</a>
+            <a href="about us.html">Terms of Service</a>
+          </div>
+    
+          <div class="footer-row-1">
+            <h2>Contact US</h2>
+            <a href="contact us.html">Jobs</a>
+            <a href="contact us.html">Support</a>
+            <a href="contact us.html">Contact</a>
+            <a href="contact us.html">Sponsorships</a>
+          </div>
+    
+          <div class="footer-row-1">
+            <h2>Social Media</h2>
+            <a href="index.html">Instagram</a>
+            <a href="index.html">Facebook</a>
+            <a href="index.html">Youtube</a>
+            <a href="index.html">Twitter</a>
+          </div>
+          <div class="footer-email-form">
+            <h2>Join our newsletter</h2>
+            <input type="email" placeholder="Enter your email address" id="footer-email" />
+            <input type="Submit" value="Sign up" id="footer-email-btn" />
+          </div>
+        </div>
+      </div>
+</body>
+</html>
