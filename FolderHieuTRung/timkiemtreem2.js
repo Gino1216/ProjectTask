@@ -182,10 +182,10 @@ const people = [
 ];
 
 
-/// Hàm hiển thị danh sách người
+// Hàm hiển thị danh sách người
 function displayPeople(personList) {
     const personContainer = document.getElementById("person-list");
-    personContainer.innerHTML = ""; // Xóa nội dung cũ
+    personContainer.innerHTML = ""; 
 
     personList.forEach(person => {
         const personCard = document.createElement("div");
@@ -211,7 +211,6 @@ function displayPeople(personList) {
     });
 }
 
-// Lọc theo vùng miền
 function filterByRegion(region) {
     const personCards = document.querySelectorAll(".person-card");
     personCards.forEach(card => {
@@ -220,7 +219,6 @@ function filterByRegion(region) {
     });
 }
 
-// Lọc theo vấn đề
 function filterByIssue(issue) {
     const personCards = document.querySelectorAll(".person-card");
     personCards.forEach(card => {
@@ -245,20 +243,15 @@ function hideAll() {
     });
 }
 
-// Sự kiện cho bộ lọc vùng miền
 document.getElementById("region-select").addEventListener("change", (e) => {
     filterByRegion(e.target.value);
 });
 
-// Sự kiện cho bộ lọc vấn đề
 document.getElementById("issue-select").addEventListener("change", (e) => {
     filterByIssue(e.target.value);
 });
 
-// Sự kiện cho nút "Hiện Tất Cả"
 document.getElementById("show-all-btn").addEventListener("click", showAll);
-
-// Sự kiện cho nút "Ẩn Tất Cả"
 document.getElementById("hide-all-btn").addEventListener("click", hideAll);
 
 // Sự kiện cho nút "Gửi Ý Kiến" để hiển thị hoặc ẩn khung báo cáo
@@ -280,7 +273,6 @@ document.getElementById("report-form").addEventListener("submit", function(event
     const issue = document.getElementById("issue").value;
     const details = document.getElementById("details").value;
 
-    // Kiểm tra từng trường và hiển thị cảnh báo nếu cần
     if (!name) {
         alert("Vui lòng nhập tên.");
         return;
@@ -310,7 +302,6 @@ document.getElementById("report-form").addEventListener("submit", function(event
         return;
     }
 
-    // Thêm báo cáo vào danh sách nếu mọi trường đã được nhập
     people.push({
         name: name,
         region: region,
@@ -321,10 +312,8 @@ document.getElementById("report-form").addEventListener("submit", function(event
         tags: [issue]
     });
 
-    // Hiển thị lại danh sách với báo cáo mới
     displayPeople(people);
 
-    // Hiển thị thông báo xác nhận
     alert("Thông tin của bạn đã được tiếp nhận");
 
     // Xóa dữ liệu biểu mẫu và ẩn khung báo cáo
