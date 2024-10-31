@@ -144,7 +144,7 @@ gap: 20px;
   box-shadow: 0px 15px 30px rgba(77, 166, 255, 0.4), 0px 25px 50px rgba(173, 216, 230, 0.3);
 } 
 .noidunghang12  img{
-  max-width: 100%;/* chỉnh ảnh  */
+  max-width: 60%;/* chỉnh ảnh  */
   object-fit: cover;
   max-height: auto;
   height: 100%;
@@ -282,7 +282,80 @@ gap: 20px;
     justify-content: center;
     margin-top: 20px; /* Khoảng cách so với nội dung trên */
   }
-  
+  /* Responsive cho thiết bị di động */
+@media (max-width: 768px) {
+  .noidung {
+    max-width: 100%;
+    gap: 40px; /* giảm khoảng cách */
+  }
+
+  .hang1, .hang2 {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .noidunghang1, .noidunghang2, .noidunghang12 {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 5px 10px rgba(80, 80, 80, 0.2), 0px 10px 20px rgba(128, 128, 128, 0.1);
+  }
+
+  .noidunghang12 {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .noidunghang12 img {
+    height: auto;
+  }
+
+  /* Giảm padding trong các div nội dung cho thiết bị nhỏ */
+  .contentnoidung1, .contentnoidung12 {
+    padding: 10px;
+  }
+
+  .contentnoidung12 {
+    gap: 10px;
+  }
+}
+
+/* Responsive cho thiết bị từ 768px đến 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .noidung {
+    max-width: 100%;
+    gap: 60px;
+  }
+
+  .hang1, .hang2 {
+    gap: 20px;
+  }
+
+  .noidunghang2 {
+    max-width: 45%; /* Giảm chiều rộng cho màn hình trung bình */
+    height: 60vh; /* Giảm chiều cao */
+  }
+
+  .noidunghang12 {
+    max-width: 80%;
+    height: auto;
+  }
+
+  .noidunghang1 {
+    height: auto;
+  }
+
+  .noidunghang12 img {
+    height: auto;
+  }
+
+  .contentnoidung12, .contentnoidung1 {
+    padding: 15px;
+    gap: 15px;
+  }
+}
+
+
  
   
 
