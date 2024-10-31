@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảo vệ Trẻ em - Tương lai của Chúng ta</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="thanh.css">
+    
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"></script>
+    <style>
+        /* Reset và thiết lập chung */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fafafa;
+            color: #4a4a4a;
+            line-height: 1.7;
+            font-size: large;
+        }
+        /* Header */
+        
+        header h1 {
+            font-size: 1.8em;
+            margin-bottom: 5px;
+        }
+        .subheading {
+            font-size: 1em;
+            color: #555;
+            margin-top: 5px;
+        }
+        /* Container bài báo */
+        .contentthanh1 {
+            max-width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        section {
+            margin-bottom: 20px;}
+        section h2 {
+            font-size: 1.3em;
+            color: #6a8d98;
+            border-left: 4px solid #b56363;
+            padding-left: 10px;
+            margin-bottom: 10px;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        .conclusion {
+            font-weight: bold;
+            color: #333;
+            background-color: #eaeaea;
+            padding: 15px;
+            text-align: center;
+        }
+        li{
+            list-style: circle;
+        }
+        .nutancuathanh{
+    padding: 20px 80px;   /* tăng độ rộng bên trong bút  */
+    margin: 20px;  /* khoảng cách các nút */
+    border-radius: 20px;
+    background-color: #4da6ff; 
+    color: white; 
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Tạo hiệu ứng nổi */
+    transition: background-color 0.3s, transform 0.2s;
+   
+  }
+  .nutancuathanh:hover {
+    background-color: #3399ff; 
+    transform: scale(1.05); 
+  }
+  
+  .nutancuathanh:active {
+    background-color: #1a8cff; 
+    transform: scale(0.7); 
+  }
+    </style>
+</head>
+<body>
+
+    <div id="wrapper">
+        <div id="header">
+          <img src="image/logo.png" alt="">
+          <div id="menu">
+            <div class="item ">
+              <a href="index.html">HOME</a>
+            </div>
+            <div class="item">
+              <a href="about us.html">ABOUT US</a>
+            </div>
+            <div class="item item_bottom">
+              <a href="ACTIVITI.html">ACTIVITI AND DONATE</a>
+            </div>
+            <div class="item item_world ">
+              <a href="today in world.html">TODAY</a>
+              <!-- <div class="item_city">
+                <div class="city"><a href="new york.html">NEW YORK</a></div>
+                <div class="city"><a href="tokyo.html">TOKYO</a></div>
+                <div class="city"><a href="sydney.html">SYDNEY</a></div>
+                <div class="city"><a href="paris.html">PARIS</a></div>
+                <div class="city"><a href="moskva.html">MOSKVA</a></div>
+              </div> -->
+            </div>
+            <div class="item">
+              <a href="check.html">CHECK</a>
+            </div>
+            <div class="item">
+              <a href="contact us.html">CONTACT US</a>
+            </div>
+          </div>
+          <form action="" id="search" onsubmit="return searchFunction();">
+            <input type="text" id="search_text" placeholder="Search here..." required>
+            <button id="search_btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+        </div>
+        <div class="parent-icon">
+          <div class="icon-menu-open">
+            <i class="fas fa-bars fa-lg"></i>
+          </div>
+          <div class="icon-menu-close">
+            <i class="fas fa-times fa-lg"></i>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="contentthanh1">
+        <section class="intro">
+            <h1 style="margin-top: 40px;"> Vô Cảm và Tự Kỷ Ở Tuổi Vị Thành Niên: Khi Hoàn Cảnh Sống Đẩy Trẻ Em Rời Xa Cộng Đồng</h1>
+            <p>Trong thời đại hiện nay, khi sự phát triển của công nghệ và tốc độ sống ngày càng nhanh chóng, một thực trạng đáng báo động đang dần hiện hữu trong xã hội: sự gia tăng của tình trạng vô cảm và tự kỷ ở tuổi vị thành niên. Nhiều yếu tố từ môi trường sống, sự thiếu thốn tương tác và quan tâm từ gia đình cũng như cộng đồng đã góp phần hình thành nên những nhân cách bị cô lập, khiến các em trở nên lạc lõng và xa cách với xã hội. Đây không chỉ là vấn đề tâm lý mà còn là một dấu hiệu đáng lo ngại về sự phát triển của thế hệ tương lai.</p>
+        </section>
+        
+        <section>
+            <h2>Thiếu Thốn Tương Tác Từ Gia Đình – Gốc Rễ Của Sự Cô Lập</h2>
+            <p>Gia đình, từ lâu đã được xem là "cái nôi" hình thành nhân cách của trẻ em, đóng vai trò quan trọng trong việc nuôi dưỡng và phát triển cả về thể chất lẫn tinh thần cho các em. Tuy nhiên, trong xã hội hiện đại, áp lực kinh tế, công việc và những mối quan hệ xã hội khác đã khiến nhiều bậc cha mẹ không còn đủ thời gian và tâm trí để dành cho con cái. Trẻ em, đặc biệt là ở độ tuổi vị thành niên, thường phải đối mặt với những khó khăn về tâm lý mà không có ai chia sẻ và dẫn dắt. Sự thiếu quan tâm từ gia đình khiến các em cảm thấy bị bỏ rơi, lạc lõng trong chính mái ấm của mình.</p>
+            <p>Thay vì có sự hướng dẫn, trò chuyện để định hướng và giải tỏa những vấn đề tâm lý, nhiều trẻ em đã dần tìm đến các phương tiện khác để lấp đầy khoảng trống tình cảm. Một số tìm đến mạng xã hội, một số khác lại tìm đến các thú vui tiêu khiển ảo, khiến họ dần xa lánh thực tế và trở nên cô lập với chính cuộc sống của mình.</p>
+       <div style="text-align: center;"><img src="https://sohanews.sohacdn.com/2019/4/13/photo-1-15551473481641233827741.jpg" alt=""></div>
+        </section>
+        
+        <section>
+            <h2>Sự Vô Cảm: Hệ Quả Tất Yếu Của Sự Cô Lập</h2>
+            <p>Sự thiếu hụt trong các mối quan hệ xã hội khiến trẻ em dần trở nên vô cảm với môi trường xung quanh. Tâm lý tự kỷ và vô cảm phát triển khi các em không còn cảm nhận được sự liên kết với cộng đồng. Những đứa trẻ này dường như sống trong thế giới riêng của mình, xa rời các giá trị cảm xúc cơ bản như sự đồng cảm, lòng trắc ẩn hay niềm vui từ những mối quan hệ xã hội.</p>
+            <p>Sự vô cảm không chỉ dừng lại ở việc trẻ em trở nên lạc lõng, mà nó còn có thể dẫn đến những hành vi tiêu cực như bạo lực, thờ ơ trước đau khổ của người khác, thậm chí có những suy nghĩ tiêu cực về bản thân và cuộc sống. Khi không cảm nhận được tình yêu thương và sự quan tâm, các em có thể hình thành thái độ đối kháng với xã hội, dễ dàng rơi vào những hành vi tự hủy hoại hoặc gây tổn thương cho người khác.</p>
+        </section>
+        
+        <section>
+            <h2>Tự Kỷ – Mặt Tối Của Sự Cô Lập Nội Tâm</h2>
+            <p>Tự kỷ không chỉ là một dạng rối loạn phát triển, mà còn có thể là kết quả của việc sống trong môi trường thiếu tương tác. Đối với nhiều trẻ em vị thành niên, tự kỷ có thể không phải là một bệnh lý từ khi sinh ra, mà là hệ quả của sự cô lập kéo dài. Khi không có cơ hội để giao tiếp, trò chuyện và chia sẻ, các em dần thu mình lại và tìm đến những thú vui một mình để tránh né thế giới bên ngoài.</p>
+            <p>Những đứa trẻ này có xu hướng trở nên khép kín, ngại giao tiếp và không còn hứng thú với các hoạt động xã hội. Chúng có thể dành hàng giờ trước màn hình máy tính, chơi game hoặc xem phim, tránh né mọi tương tác với người thân và bạn bè. Khi những biểu hiện này kéo dài, tình trạng tự kỷ có thể trở thành một phần khó thay đổi trong tính cách của các em.</p>
+        <div style="text-align: center;"><img src="https://cdn.youmed.vn/tin-tuc/wp-content/uploads/2021/07/tram-cam-o-tre-em.jpg" alt=""></div>
+        </section>
+        
+        <section>
+            <h2>Công Nghệ – Con Dao Hai Lưỡi</h2>
+            <p>Không thể phủ nhận rằng công nghệ đã mang lại nhiều tiện ích và cơ hội cho trẻ em trong việc học tập và giải trí. Tuy nhiên, nó cũng trở thành nguyên nhân chính khiến trẻ em trở nên xa lánh thực tế và dễ dàng rơi vào trạng thái cô lập. Sự phát triển vượt bậc của mạng xã hội và các thiết bị điện tử đã làm giảm đi sự giao tiếp trực tiếp giữa con người với nhau.</p>
+            <p>Nhiều trẻ em vị thành niên hiện nay thích thú với việc sống trong thế giới ảo hơn là tham gia vào những hoạt động thực tế. Những kết nối qua màn hình không đủ để tạo ra sự đồng cảm và chia sẻ chân thật, và theo thời gian, điều này đã làm ảnh hưởng đến kỹ năng xã hội và khả năng xây dựng mối quan hệ của các em.</p>
+        </section>
+        
+        <section>
+            <h2>Hệ Quả Lâu Dài – Tâm Hồn U Tối, Tương Lai Bế Tắc</h2>
+            <p>Nếu không được can thiệp kịp thời, tình trạng vô cảm và tự kỷ ở trẻ vị thành niên sẽ gây ra những hệ quả nghiêm trọng về lâu dài. Những trẻ em này sẽ gặp khó khăn trong việc hòa nhập với xã hội, đối diện với tình trạng lo âu, trầm cảm, thậm chí có thể dẫn đến những hành vi nguy hiểm như tự tử.</p>
+            <p>Xã hội sẽ phải gánh chịu những thiệt hại không nhỏ khi một phần thế hệ trẻ mất đi khả năng giao tiếp, tương tác và đóng góp cho cộng đồng. Những đứa trẻ lớn lên trong sự cô lập và vô cảm sẽ khó có thể trở thành những công dân có ích, và tương lai của cả xã hội sẽ bị ảnh hưởng theo.</p>
+        </section>
+        
+        <section >
+            <h2>Giải Pháp – Khôi Phục Sự Kết Nối Và Yêu Thương</h2>
+            <p>Để ngăn chặn tình trạng vô cảm và tự kỷ ở trẻ vị thành niên, cần có sự quan tâm đúng mực từ phía gia đình, nhà trường và xã hội. Gia đình cần đóng vai trò quan trọng trong việc tạo ra một môi trường yêu thương, gắn kết và an toàn cho trẻ. Thay vì để trẻ em chìm đắm trong thế giới ảo, cha mẹ cần tạo ra nhiều cơ hội để tương tác, trò chuyện và chia sẻ với con cái. Điều này không chỉ giúp trẻ cảm nhận được tình yêu thương mà còn giúp phát triển nhân cách một cách lành mạnh.</p>
+            <p>Nhà trường và các tổ chức xã hội cũng cần đóng góp vào việc giáo dục và nâng cao nhận thức cho trẻ em về tầm quan trọng của việc giao tiếp và tương tác với người khác. Các hoạt động ngoại khóa, các buổi trò chuyện nhóm hay những chương trình rèn luyện kỹ năng mềm sẽ giúp trẻ học cách xây dựng mối quan hệ xã hội và đối diện với những thách thức trong cuộc sống.</p>
+        <div style="text-align: center;"><img src="https://media-cdn-v2.laodong.vn/storage/newsportal/2023/11/19/1269489/7-6.jpg" alt=""></div>
+        </section>
+   
+    
+    
+        <section class="conclusion">
+            <h1>Vì thế :Đừng Để Thế Hệ Trẻ Lạc Lõng</h1>
+           <div>Vô cảm và tự kỷ ở tuổi vị thành niên không chỉ là một vấn đề cá nhân mà là vấn đề chung của cả xã hội. Nếu không có những biện pháp kịp thời, chúng ta sẽ chứng kiến một thế hệ trẻ lớn lên trong sự cô lập và lạc lõng, mất đi khả năng kết nối với thế giới xung quanh. Gia đình, nhà trường và cộng đồng cần chung tay để mang lại cho trẻ em một môi trường sống đầy tình yêu thương và sự quan tâm, giúp các em có thể phát triển một cách toàn diện và lành mạnh, sẵn sàng đối mặt với tương lai.</div>
+        </section>
+    </div>
+    
+
+    <section style="display: flex;justify-content: center;align-items: center;">
+        <button class="nutancuathanh" onclick="goBack()"> Trở lại trang trước</button>
+      
+      <script>
+      function goBack() {
+          window.history.back();
+      }
+      </script>
+      </section>
+
+
+
+    <div class="footer-container">
+        <div class="footer">
+          <div class="footer-row-1">
+            <h2>About US</h2>
+            <a href="about us.html">Blog</a>
+            <a href="about us.html">Demo</a>
+            <a href="about us.html">Customer</a>
+            <a href="about us.html">Terms of Service</a>
+          </div>
+    
+          <div class="footer-row-1">
+            <h2>Contact US</h2>
+            <a href="contact us.html">Jobs</a>
+            <a href="contact us.html">Support</a>
+            <a href="contact us.html">Contact</a>
+            <a href="contact us.html">Sponsorships</a>
+          </div>
+    
+          <div class="footer-row-1">
+            <h2>Social Media</h2>
+            <a href="index.html">Instagram</a>
+            <a href="index.html">Facebook</a>
+            <a href="index.html">Youtube</a>
+            <a href="index.html">Twitter</a>
+          </div>
+          <div class="footer-email-form">
+            <h2>Join our newsletter</h2>
+            <input type="email" placeholder="Enter your email address" id="footer-email" />
+            <input type="Submit" value="Sign up" id="footer-email-btn" />
+          </div>
+        </div>
+      </div>
+</body>
+</html>
