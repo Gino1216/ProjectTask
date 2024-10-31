@@ -34,7 +34,7 @@ chatInput.addEventListener("keypress", (event) => {
         if (automatedResponses[message]) {
             setTimeout(() => addMessage("bot", automatedResponses[message]), 500);
         } else {
-            setTimeout(() => addMessage("bot", "Xin lỗi, tôi chưa hiểu câu hỏi của bạn."), 500);
+            setTimeout(() => addMessage("bot", "Xin Chào oke chưa ? tôi giúp gì được "), 500);
         }
     }
 });
