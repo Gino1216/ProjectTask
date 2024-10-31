@@ -54,27 +54,23 @@ function searchFunction() {
 
 const menu = [
   {
-    label: "HOME",
+    label: "Trang Chủ",
     href: "/index",
   },
   {
-    label: "ABOUT US",
+    label: "Về Chúng Tôi",
     href: "/about us",
   },
   {
-    label: "ACTIVITI AND DONATE",
+    label: "Quyên Góp",
     href: "/ACTIVITI",
   },
   {
-    label: "TODAY",
-    href: "/today in world",
-  },
-  {
-    label: "CHECK",
+    label: "Thông Tin",
     href: "/check",
   },
   {
-    label: "CONTACT US",
+    label: "Liên Hệ",
     href: "/contact us",
   },
 ];
