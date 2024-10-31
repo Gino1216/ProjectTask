@@ -215,6 +215,7 @@
 .button {
   display: inline-block;
   padding: 8px 16px;
+  width: 130px;
   background-color: white;
   color: #009fe3;
   text-decoration: none;
@@ -712,7 +713,7 @@
 }
 
 .city_btn_img {
-  width: 22%;
+
   height: 100%;
 }
 
