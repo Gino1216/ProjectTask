@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảo vệ Trẻ em - Tương lai của Chúng ta</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="thanh.css">
+    
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"></script>
+    <style>
+        /* Reset và thiết lập chung */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fafafa;
+            color: #4a4a4a;
+            line-height: 1.7;
+            font-size: large;
+        }
+        /* Header */
+        
+        header h1 {
+            font-size: 1.8em;
+            margin-bottom: 5px;
+        }
+        .subheadingthanh1 {
+            font-size: 1em;
+            color: #555;
+            margin-top: 5px;
+        }
+        /* Container bài báo */
+        .contentthanh1 {
+            max-width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Các phần của bài báo */
+        section {
+            margin-bottom: 20px;
+        }
+        section h2 {
+            font-size: 1.4em;
+            color: #4a90e2;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            border-left: 4px solid #f9b2b2;
+            padding-left: 10px;
+        }
+        /* Hình ảnh minh họa */
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-top: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 3px 6px rgba(70, 69, 69, 0.1);
+ 
+        }
+        /* Kết luận */
+        .conclusion {
+            font-weight: bold;
+            color: #4a4a4a;
+            background-color: #f2f8fb;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        li{
+            list-style: circle;
+        }
+        .nutancuathanh{
+    padding: 20px 80px;   /* tăng độ rộng bên trong bút  */
+    margin: 20px;  /* khoảng cách các nút */
+    border-radius: 20px;
+    background-color: #4da6ff; 
+    color: white; 
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Tạo hiệu ứng nổi */
+    transition: background-color 0.3s, transform 0.2s;
+   
+  }
+  .nutancuathanh:hover {
+    background-color: #3399ff; 
+    transform: scale(1); 
+  }
+  
+  .nutancuathanh:active {
+    background-color: #1a8cff; 
+    transform: scale(0.5); 
+  }
+    </style>
+</head>
+<body>
+
+    <div id="wrapper">
+        <div id="header">
+          <img src="image/logo.png" alt="">
+          <div id="menu">
+            <div class="item ">
+              <a href="index.html">HOME</a>
+            </div>
+            <div class="item">
+              <a href="about us.html">ABOUT US</a>
+            </div>
+            <div class="item item_bottom">
+              <a href="ACTIVITI.html">ACTIVITI AND DONATE</a>
+            </div>
+            <div class="item item_world ">
+              <a href="today in world.html">TODAY</a>
+              <!-- <div class="item_city">
+                <div class="city"><a href="new york.html">NEW YORK</a></div>
+                <div class="city"><a href="tokyo.html">TOKYO</a></div>
+                <div class="city"><a href="sydney.html">SYDNEY</a></div>
+                <div class="city"><a href="paris.html">PARIS</a></div>
+                <div class="city"><a href="moskva.html">MOSKVA</a></div>
+              </div> -->
+            </div>
+            <div class="item">
+              <a href="check.html">CHECK</a>
+            </div>
+            <div class="item">
+              <a href="contact us.html">CONTACT US</a>
+            </div>
+          </div>
+          <form action="" id="search" onsubmit="return searchFunction();">
+            <input type="text" id="search_text" placeholder="Search here..." required>
+            <button id="search_btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+        </div>
+        <div class="parent-icon">
+          <div class="icon-menu-open">
+            <i class="fas fa-bars fa-lg"></i>
+          </div>
+          <div class="icon-menu-close">
+            <i class="fas fa-times fa-lg"></i>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="contentthanh1">
+        <section class="intro">
+            <h1>Quyền trẻ em theo công ước quốc tế và pháp luật quốc gia</h1>
+            <p>Quyền trẻ em là các quyền pháp lý đặc biệt nhằm bảo vệ và thúc đẩy sự phát triển toàn diện của trẻ em. Theo Công ước Liên Hợp Quốc về Quyền trẻ em (CRC), các quyền này được chia thành bốn nhóm chính:</p>
+        </section>
+    
+
+
+        <section style="margin-left: 30px;">
+            <h2>1. Quyền sống còn</h2>
+            <p>Quyền sống còn là một trong những quyền cơ bản và quan trọng nhất của trẻ em, đảm bảo rằng mọi trẻ em đều được quyền sống và phát triển trong môi trường an toàn, lành mạnh. Quyền này bao gồm việc bảo vệ về mặt thể chất, tinh thần, sức khỏe, và sự phát triển toàn diện. Các khía cạnh chính của quyền sống còn bao gồm:</p>
+<ul>
+    <li><strong>Chăm sóc y tế:</strong> Mọi trẻ em đều có quyền tiếp cận dịch vụ chăm sóc sức khỏe, từ việc tiêm chủng phòng bệnh, khám chữa bệnh định kỳ, đến điều trị khi ốm đau. Việc đảm bảo sức khỏe tốt giúp trẻ phát triển mạnh khỏe và giảm thiểu các nguy cơ về bệnh tật trong tương lai.</li>
+    <li><strong>Dinh dưỡng:</strong> Trẻ em cần được cung cấp đủ dinh dưỡng với thực phẩm sạch, an toàn và đảm bảo vệ sinh. Dinh dưỡng đóng vai trò quan trọng trong sự phát triển thể chất và trí não, đặc biệt là trong những năm đầu đời.</li>
+    <li><strong>Chỗ ở an toàn:</strong> Môi trường sống của trẻ phải đảm bảo an toàn, tránh xa các nguy cơ từ bạo lực, thiên tai, và ô nhiễm môi trường. Chỗ ở ổn định giúp trẻ có nền tảng vững chắc để phát triển thể chất và tâm lý.</li>
+    <li><strong>Nước sạch và vệ sinh:</strong> Tiếp cận nguồn nước sạch và các điều kiện vệ sinh cơ bản là yếu tố then chốt trong việc phòng ngừa bệnh tật. Trẻ em cần được giáo dục về vệ sinh cá nhân và sống trong môi trường sạch sẽ để phát triển lành mạnh.</li>
+</ul>
+<p>Ở Việt Nam, quyền sống còn của trẻ em được pháp luật bảo vệ và thể hiện qua nhiều chính sách như chăm sóc y tế miễn phí cho trẻ dưới 6 tuổi, các chương trình dinh dưỡng học đường, và các quy định về bảo vệ an toàn thực phẩm và môi trường sống. Bằng cách đảm bảo quyền sống còn, chúng ta giúp trẻ em có một khởi đầu vững chắc để phát triển trong môi trường an toàn và lành mạnh.</p>
+        </section>
+    
+
+
+
+        <section style="margin-left: 30px;">
+          
+            <h2>2. Quyền phát triển</h2>
+<p>Quyền phát triển là quyền giúp trẻ em được phát triển tối đa về thể chất, trí tuệ, tinh thần và đạo đức. Đây là quyền thiết yếu để đảm bảo trẻ có cơ hội học hỏi, rèn luyện kỹ năng và đạt được những cột mốc quan trọng trong sự trưởng thành. Quyền phát triển bao gồm:</p>
+<ul>
+    <li><strong>Quyền được học tập:</strong> Trẻ em có quyền tiếp cận nền giáo dục chất lượng, bình đẳng, giúp các em phát triển khả năng tư duy, kiến thức, và kỹ năng sống. Giáo dục không chỉ dừng lại ở các môn học cơ bản mà còn bao gồm kỹ năng sáng tạo, tư duy phản biện, và kỹ năng giao tiếp xã hội.</li>
+    <li><strong>Quyền được vui chơi:</strong> Vui chơi là nhu cầu cơ bản và là một phần của quá trình phát triển. Trẻ em cần có không gian và thời gian vui chơi, trải nghiệm, từ đó phát triển khả năng vận động, giao tiếp và sáng tạo, đồng thời xây dựng sự tự tin và niềm vui trong cuộc sống.</li>
+    <li><strong>Phát triển các kỹ năng cần thiết:</strong> Trẻ em cần được trang bị các kỹ năng quan trọng như kỹ năng tự bảo vệ bản thân, kỹ năng làm việc nhóm, khả năng tự lập và giải quyết vấn đề. Những kỹ năng này không chỉ giúp trẻ thành công trong cuộc sống mà còn giúp trẻ dễ dàng đối mặt với các thách thức trong tương lai.</li>
+    <li><strong>Phát triển tinh thần và cảm xúc:</strong> Trẻ em cần có một môi trường an toàn, hỗ trợ phát triển tinh thần và cảm xúc. Điều này bao gồm việc nhận được tình yêu thương, sự quan tâm, và động viên từ gia đình, nhà trường, và cộng đồng để các em có thể phát triển tâm lý và cảm xúc ổn định.</li>
+</ul>
+<p>Ở Việt Nam, quyền phát triển của trẻ em được đảm bảo thông qua các chương trình giáo dục phổ cập, chính sách hỗ trợ trẻ em khó khăn, và các chương trình hỗ trợ phát triển toàn diện từ thể chất đến tinh thần. Bằng cách thúc đẩy quyền phát triển, chúng ta không chỉ giúp trẻ em hiện thực hóa tiềm năng của mình mà còn góp phần xây dựng một thế hệ tương lai khỏe mạnh, có năng lực và tự tin.</p>
+
+        </section>
+    
+
+
+
+
+        <section style="margin-left: 30px;">
+            <h2>3. Quyền bảo vệ</h2>
+<p>Quyền bảo vệ của trẻ em bao gồm các biện pháp pháp lý và xã hội nhằm đảm bảo các em được an toàn, tránh xa khỏi mọi hình thức xâm hại, bạo lực và bóc lột. Đây là quyền quan trọng, giúp trẻ em lớn lên trong môi trường lành mạnh, được bảo vệ về thể chất, tinh thần và phát triển an toàn. Quyền bảo vệ cụ thể bao gồm:</p>
+<ul>
+    <li><strong>Bảo vệ khỏi bạo lực và xâm hại:</strong> Trẻ em cần được bảo vệ khỏi các hành vi bạo lực thể chất, tình cảm, cũng như xâm hại tình dục. Các chính sách và quy định của pháp luật yêu cầu sự ngăn ngừa, can thiệp kịp thời, và xử lý nghiêm minh đối với các hành vi này.</li>
+    <li><strong>Chống lại bóc lột lao động:</strong> Trẻ em không nên bị buộc tham gia vào lao động quá sức, nguy hiểm hay không phù hợp với độ tuổi, nhằm đảm bảo các em có thời gian và điều kiện học tập, vui chơi đúng lứa tuổi.</li>
+    <li><strong>Bảo vệ khỏi phân biệt đối xử:</strong> Tất cả trẻ em đều có quyền bình đẳng, không phân biệt về giới tính, hoàn cảnh gia đình hay khuyết tật. Quyền bảo vệ giúp các em được đối xử công bằng, tiếp cận cơ hội học tập và phát triển như nhau.</li>
+    <li><strong>Hỗ trợ khi gặp nguy cơ:</strong> Trong các tình huống nguy hiểm hoặc khó khăn, trẻ em cần được các tổ chức bảo vệ và hỗ trợ kịp thời, bao gồm dịch vụ tư vấn tâm lý, trợ giúp pháp lý và nơi cư trú tạm thời nếu cần thiết.</li>
+</ul>
+<p>Quyền bảo vệ không chỉ là trách nhiệm của gia đình mà còn của cả cộng đồng và hệ thống pháp luật, nhằm giúp trẻ em phát triển trong một môi trường an toàn và đầy yêu thương.</p>
+
+        </section>
+    
+        <section style="margin-left: 30px;">
+            <h2>4. Quyền tham gia</h2>
+<p>Quyền tham gia của trẻ em đảm bảo rằng các em có thể bày tỏ ý kiến, mong muốn và nguyện vọng của mình trong các vấn đề ảnh hưởng đến cuộc sống, học tập, và sự phát triển của bản thân. Đây là quyền quan trọng giúp trẻ em cảm thấy có giá trị, được tôn trọng và có trách nhiệm với cộng đồng xung quanh. Quyền tham gia bao gồm các khía cạnh như:</p>
+<ul>
+    <li><strong>Quyền bày tỏ ý kiến:</strong> Trẻ em có quyền chia sẻ suy nghĩ và cảm xúc của mình về các vấn đề liên quan đến gia đình, trường học và xã hội. Điều này khuyến khích các em phát triển khả năng giao tiếp, sự tự tin và ý thức trách nhiệm.</li>
+    <li><strong>Tham gia vào quá trình ra quyết định:</strong> Đối với các quyết định có tác động lớn đến cuộc sống của trẻ em, như giáo dục, sức khỏe hay phúc lợi, các em cần có cơ hội đóng góp ý kiến. Điều này giúp trẻ cảm thấy được lắng nghe và được tôn trọng.</li>
+    <li><strong>Tham gia vào các hoạt động cộng đồng:</strong> Trẻ em có quyền tham gia vào các chương trình, dự án xã hội và các hoạt động cộng đồng phù hợp với lứa tuổi. Qua đó, các em có thể học hỏi, phát triển kỹ năng và xây dựng mối quan hệ xã hội.</li>
+    <li><strong>Bảo vệ quyền tham gia một cách an toàn:</strong> Trẻ em cần được đảm bảo an toàn khi tham gia các hoạt động và không bị ép buộc hoặc phân biệt đối xử trong quá trình tham gia. Các môi trường tham gia cần thân thiện và hỗ trợ để trẻ cảm thấy thoải mái khi bày tỏ quan điểm.</li>
+</ul>
+<p>Quyền tham gia không chỉ mang lại lợi ích cho trẻ em mà còn góp phần xây dựng xã hội công bằng và tiến bộ, nơi mọi thành viên đều được lắng nghe và đóng góp.</p>
+
+        </section>
+    
+        <section class="conclusion">
+            <p>Ở Việt Nam, các quyền này được thể hiện qua Luật Trẻ em 2016, trong đó quy định rõ ràng các biện pháp và chính sách bảo vệ trẻ em khỏi các nguy cơ bạo lực và xâm hại, đồng thời đảm bảo quyền được giáo dục, y tế và điều kiện sống tốt. Luật pháp quốc gia cam kết thực hiện các quyền trẻ em theo chuẩn mực quốc tế, giúp trẻ em phát triển toàn diện trong một môi trường an toàn và lành mạnh.</p>
+        </section>
+    
+        <section class="policy" style="margin-left: 30px;">
+            <h1>7. Các chính sách bảo vệ trẻ em</h1>
+            <p>Cung cấp thông tin chi tiết về các chính sách và điều luật liên quan đến việc bảo vệ trẻ em khỏi các hình thức bạo lực, xâm hại.</p>
+            
+            <h2>1. Luật Trẻ em 2016</h2>
+            <p>Luật Trẻ em 2016 là văn bản pháp lý chủ yếu quy định về các quyền và nghĩa vụ của trẻ em, trong đó bảo vệ trẻ em khỏi bạo lực và xâm hại là một nội dung quan trọng:</p>
+            <ul>
+                <li>Điều 4: Quy định quyền trẻ em, bao gồm quyền được bảo vệ khỏi xâm hại, bạo lực, bóc lột và bỏ rơi.</li>
+                <li>Điều 29 - 30: Đề cập đến các biện pháp bảo vệ trẻ em khỏi xâm hại tình dục, bóc lột lao động và buôn bán trẻ em.</li>
+                <li>Điều 71 - 73: Quy định các hình thức chăm sóc, bảo vệ trẻ em trong trường hợp trẻ em gặp nguy cơ bị xâm hại, và trách nhiệm của các cá nhân, tổ chức trong việc bảo vệ trẻ em.</li>
+            </ul>
+    
+            <h2>2. Bộ luật Hình sự 2015 (Sửa đổi, bổ sung 2017)</h2>
+            <ul>
+                <li>Quy định cụ thể các hành vi xâm hại và bạo lực đối với trẻ em là tội phạm hình sự, với các điều khoản liên quan đến tội dâm ô, xâm hại tình dục trẻ em (Điều 146), tội mua bán, chiếm đoạt trẻ em (Điều 150), tội bạo hành, hành hạ trẻ em (Điều 185).</li>
+            </ul>
+    
+            <h2>3. Luật Phòng, chống Bạo lực Gia đình 2007</h2>
+            <ul>
+                <li>Quy định các hành vi bạo lực gia đình đối với trẻ em và biện pháp ngăn chặn, xử lý vi phạm, Điều 42 quy định trách nhiệm phát hiện, ngăn chặn và báo cáo các hành vi bạo lực gia đình nhằm bảo vệ trẻ em.</li>
+            </ul>
+    
+            <h2>4. Nghị định 56/2017/NĐ-CP</h2>
+            <ul>
+                <li>Hướng dẫn thi hành một số điều của Luật Trẻ em, bao gồm quy trình bảo vệ trẻ em trong trường hợp bị bạo lực hoặc xâm hại, xác định trách nhiệm của các cơ quan liên quan.</li>
+            </ul>
+    
+            <h2>5. Quyết định 1863/QĐ-TTg năm 2019</h2>
+            <ul>
+                <li>Thông qua Chương trình quốc gia phòng chống xâm hại trẻ em giai đoạn 2020 - 2025, với các hoạt động nhằm giảm thiểu xâm hại trẻ em và nâng cao nhận thức cộng đồng.</li>
+            </ul>
+    
+            <h2>6. Chương trình Bảo vệ Trẻ em 2021-2030</h2>
+            <ul>
+                <li>Hướng tới xây dựng môi trường an toàn cho trẻ em, giảm tỷ lệ trẻ em bị bạo lực và xâm hại, cải thiện hệ thống báo cáo và hỗ trợ tâm lý, pháp lý cho trẻ em.</li>
+            </ul>
+    </section><section class="conclusion">
+            <p>Các chính sách này cùng các biện pháp phòng ngừa, can thiệp và xử lý nghiêm minh các hành vi bạo lực, xâm hại trẻ em nhằm đảm bảo quyền an toàn và sự phát triển lành mạnh của trẻ em, giúp trẻ em có môi trường phát triển tốt hơn.</p>
+        </section>
+    </div>
+    
+    
+    
+
+<section style="display: flex;justify-content: center;align-items: center;">
+  <button class="nutancuathanh" onclick="goBack()"> Trở lại trang trước</button>
+
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
+</section>
+
+
+    <div class="footer-container">
+        <div class="footer">
+          <div class="footer-row-1">
+            <h2>About US</h2>
+            <a href="about us.html">Blog</a>
+            <a href="about us.html">Demo</a>
+            <a href="about us.html">Customer</a>
+            <a href="about us.html">Terms of Service</a>
+          </div>
+    
+          <div class="footer-row-1">
+            <h2>Contact US</h2>
+            <a href="contact us.html">Jobs</a>
+            <a href="contact us.html">Support</a>
+            <a href="contact us.html">Contact</a>
+            <a href="contact us.html">Sponsorships</a>
+          </div>
+    
+          <div class="footer-row-1">
+            <h2>Social Media</h2>
+            <a href="index.html">Instagram</a>
+            <a href="index.html">Facebook</a>
+            <a href="index.html">Youtube</a>
+            <a href="index.html">Twitter</a>
+          </div>
+          <div class="footer-email-form">
+            <h2>Join our newsletter</h2>
+            <input type="email" placeholder="Enter your email address" id="footer-email" />
+            <input type="Submit" value="Sign up" id="footer-email-btn" />
+          </div>
+        </div>
+      </div>
+</body>
+</html>

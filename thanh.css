@@ -86,18 +86,21 @@ div.noidunghang2 a{
 .hang1{
   display: flex;
   justify-content: space-between;
- gap: 3%;
+ gap: 5%;
  max-width: 100%;
 }
 .noidunghang1{
     display: flex;
     align-items: center;
     flex-direction: column;
-    max-width: 50%;
+    max-width: 100%;
     height: auto;
     box-shadow: 0px 10px 20px rgba(80, 80, 80, 0.4), 0px 20px 40px rgba(128, 128, 128, 0.2);
     transition: all 0.3s ease;
     overflow: hidden;
+    padding: 0%;
+    margin: 0%;
+    
     
 }
 .noidunghang1:hover{
@@ -107,6 +110,7 @@ div.noidunghang2 a{
 max-width: 100%;/* chỉnh  ảnh  */
 height: auto;
 object-fit: cover;
+height: auto;
 }
 div.noidunghang1 a{
   color: black;
@@ -125,13 +129,15 @@ div.noidunghang1 a{
 
 .noidunghang12{
   display: flex;
-  max-width: 100%;/* chỉnh khung nội dung */
+  max-width: 70%;/* chỉnh khung nội dung */
     height: 67vh;/* chỉnh khung ảnh  */
     box-shadow: 0px 10px 20px rgba(80, 80, 80, 0.4), 0px 20px 40px rgba(128, 128, 128, 0.2);
     transition: all 0.3s ease;
-
+   padding: 0;
+   margin: 0;
 overflow: hidden;
 gap: 20px; 
+
  
 }
 .noidunghang12:hover{
@@ -144,7 +150,7 @@ gap: 20px;
   height: 100%;
   padding: 0%;
   margin: 0%;
-  
+  flex: 1;
   }
   .contentnoidung12{
    display: flex;
@@ -153,6 +159,7 @@ gap: 20px;
    padding: 20px;
    color: black;
    transition: all 0.3s ease;
+   flex: 3;
   }
   .contentnoidung12:hover{
     color: #4da6ff;
@@ -162,6 +169,7 @@ gap: 20px;
   .noidunghang1 , .noidunghang12 ,.noidunghang2{
     border-radius: 20px;
   }
+  
   /* nội dung thêm  */
   
   .hidden1{
