@@ -26,7 +26,7 @@ function searchFunction() {
 
   // Tìm kiếm các phần tử bài viết (hoặc bất kỳ nội dung nào bạn muốn tìm kiếm)
   let articles = document.querySelectorAll(
-    ".content_part1_title, .content_part2_para, .content_part3_para, .content_part4"
+    ".content_part1, .content_part2, .content_part3, .content_part4,.card_content3_body"
   );
 
   let found = false;
