@@ -16,7 +16,6 @@
             <p>(Nhấn vào vùng miền trên bản đồ để xem các vấn đề liên quan)</p>
             <div class="map-placeholder">
                 <img src="vietnamverymap.png" alt="Bản đồ Việt Nam" style="width: 100%;">
-                
             </div>
         </section>
 
@@ -27,6 +26,7 @@
             <p><strong>Miền Nam:</strong> 20 trường hợp thiếu tiếp cận giáo dục</p>
         </section>
         
+        <!-- Bộ lọc vùng miền và vấn đề -->
         <div class="filters">
             <div class="filter-region">
                 <label for="region-select">Chọn Vùng Miền:</label>
@@ -63,36 +63,34 @@
             </div>
         </div>
         
-        <div id="person-list" class="person-list">
-           
-        </div>
+        <!-- Danh sách người dùng -->
+        <div id="person-list" class="person-list"></div>
 
-    
+        <!-- Form báo cáo vấn đề -->
         <section class="report-section" style="display: none;">
             <h2>Báo Cáo Vấn Đề</h2>
             <form id="report-form">
                 <label for="name">Họ và tên:</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name">
 
                 <label for="region">Vùng miền:</label>
-                <select id="region" name="region" required>
+                <select id="region" name="region">
                     <option value="Miền Bắc">Miền Bắc</option>
                     <option value="Miền Trung">Miền Trung</option>
                     <option value="Miền Nam">Miền Nam</option>
                 </select>
 
                 <label for="address">Địa chỉ:</label>
-                <input type="text" id="address" name="address" required>
+                <input type="text" id="address" name="address">
 
                 <label for="dob">Ngày Sinh:</label>
-                <input type="date" id="dob" name="dob" required>
+                <input type="date" id="dob" name="dob">
 
                 <label for="job">Công việc:</label>
-                <input type="text" id="job" name="job" required>
+                <input type="text" id="job" name="job">
 
                 <label for="issue">Vấn đề:</label>
-                <select id="issue" name="issue" required>
-                    <option value="all">Tất cả</option>
+                <select id="issue" name="issue">
                     <option value="Bạo lực gia đình">Bạo lực gia đình</option>
                     <option value="Lao động trẻ em">Lao động trẻ em</option>
                     <option value="Xâm hại tình dục trẻ em">Xâm hại tình dục trẻ em</option>
@@ -109,7 +107,7 @@
                 </select>
 
                 <label for="details">Chi tiết:</label>
-                <textarea id="details" name="details" rows="4" required></textarea>
+                <textarea id="details" name="details" rows="4"></textarea>
 
                 <button type="submit">Gửi Báo Cáo</button>
             </form>

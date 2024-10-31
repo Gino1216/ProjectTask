@@ -182,7 +182,7 @@ const people = [
 ];
 
 
-// Hàm hiển thị danh sách người
+/// Hàm hiển thị danh sách người
 function displayPeople(personList) {
     const personContainer = document.getElementById("person-list");
     personContainer.innerHTML = ""; // Xóa nội dung cũ
@@ -216,7 +216,6 @@ function filterByRegion(region) {
     const personCards = document.querySelectorAll(".person-card");
     personCards.forEach(card => {
         const cardRegion = card.getAttribute("data-region");
-        // Sử dụng includes để kiểm tra nếu cardRegion chứa giá trị region
         card.style.display = (region === "all" || cardRegion.includes(region)) ? "block" : "none";
     });
 }
@@ -281,7 +280,37 @@ document.getElementById("report-form").addEventListener("submit", function(event
     const issue = document.getElementById("issue").value;
     const details = document.getElementById("details").value;
 
-    // Thêm báo cáo vào danh sách
+    // Kiểm tra từng trường và hiển thị cảnh báo nếu cần
+    if (!name) {
+        alert("Vui lòng nhập tên.");
+        return;
+    }
+    if (!region) {
+        alert("Vui lòng chọn vùng miền.");
+        return;
+    }
+    if (!address) {
+        alert("Vui lòng nhập địa chỉ.");
+        return;
+    }
+    if (!dob) {
+        alert("Vui lòng nhập ngày sinh.");
+        return;
+    }
+    if (!job) {
+        alert("Vui lòng nhập công việc.");
+        return;
+    }
+    if (!issue) {
+        alert("Vui lòng chọn vấn đề.");
+        return;
+    }
+    if (!details) {
+        alert("Vui lòng nhập chi tiết.");
+        return;
+    }
+
+    // Thêm báo cáo vào danh sách nếu mọi trường đã được nhập
     people.push({
         name: name,
         region: region,
