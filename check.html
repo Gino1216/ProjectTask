@@ -46,10 +46,26 @@
           </div>
         </div>
       </div>
-    <div class="container">
-        <h1>Thông Tin Cá Nhân và Vấn Đề Xã Hội</h1>
+      <div class="container">
+        <h1>Bảo Vệ Trẻ Em - Thông Tin</h1>
         
-        <!-- Phần kiểm tra theo vùng miền và vấn đề -->
+        <!-- Bản đồ vùng miền tương tác -->
+        <section class="map-section">
+            <h2>Chọn Vùng Miền Trực Tiếp</h2>
+            <p>(Nhấn vào vùng miền trên bản đồ để xem các vấn đề liên quan)</p>
+            <div class="map-placeholder">
+                <img src="vietnamverymap.png" alt="Bản đồ Việt Nam" style="width: 100%;">
+            </div>
+        </section>
+
+        <section class="summary-section">
+            <h2>Thống Kê Tóm Tắt</h2>
+            <p><strong>Miền Bắc:</strong> 50 trường hợp bạo lực gia đình</p>
+            <p><strong>Miền Trung:</strong> 30 trường hợp lao động trẻ em</p>
+            <p><strong>Miền Nam:</strong> 20 trường hợp thiếu tiếp cận giáo dục</p>
+        </section>
+        
+        <!-- Bộ lọc vùng miền và vấn đề -->
         <div class="filters">
             <div class="filter-region">
                 <label for="region-select">Chọn Vùng Miền:</label>
@@ -79,15 +95,63 @@
                     <option value="Chênh lệch về sắc tộc và vùng miền">Chênh lệch về sắc tộc và vùng miền</option>
                 </select>
             </div>
-            <!-- Nút mới để hiện tất cả -->
-            <button id="show-all-btn">Hiện tất cả</button>
+            <div class="button-group">
+                <button id="show-all-btn">Hiện Tất Cả</button>
+                <button id="hide-all-btn">Ẩn Tất Cả</button>
+                <button id="submit-opinion-btn">Gửi Ý Kiến</button>
+            </div>
         </div>
+        
+        <!-- Danh sách người dùng -->
+        <div id="person-list" class="person-list"></div>
 
-        <div id="person-list" class="person-list">
-            <!-- Thông tin các cá nhân sẽ được tự động thêm bởi JavaScript -->
-        </div>
+        <!-- Form báo cáo vấn đề -->
+        <section class="report-section" style="display: none;">
+            <h2>Báo Cáo Vấn Đề</h2>
+            <form id="report-form">
+                <label for="name">Họ và tên:</label>
+                <input type="text" id="name" name="name">
+
+                <label for="region">Vùng miền:</label>
+                <select id="region" name="region">
+                    <option value="Miền Bắc">Miền Bắc</option>
+                    <option value="Miền Trung">Miền Trung</option>
+                    <option value="Miền Nam">Miền Nam</option>
+                </select>
+
+                <label for="address">Địa chỉ:</label>
+                <input type="text" id="address" name="address">
+
+                <label for="dob">Ngày Sinh:</label>
+                <input type="date" id="dob" name="dob">
+
+                <label for="job">Công việc:</label>
+                <input type="text" id="job" name="job">
+
+                <label for="issue">Vấn đề:</label>
+                <select id="issue" name="issue">
+                    <option value="Bạo lực gia đình">Bạo lực gia đình</option>
+                    <option value="Lao động trẻ em">Lao động trẻ em</option>
+                    <option value="Xâm hại tình dục trẻ em">Xâm hại tình dục trẻ em</option>
+                    <option value="Tảo hôn">Tảo hôn</option>
+                    <option value="Hôn nhân ép buộc">Hôn nhân ép buộc</option>
+                    <option value="Bắt cóc và buôn bán trẻ em">Bắt cóc và buôn bán trẻ em</option>
+                    <option value="Thiếu tiếp cận giáo dục">Thiếu tiếp cận giáo dục</option>
+                    <option value="Bắt nạt và bạo lực học đường">Bắt nạt và bạo lực học đường</option>
+                    <option value="Thiếu tiếp cận chăm sóc y tế">Thiếu tiếp cận chăm sóc y tế</option>
+                    <option value="Khó khăn kinh tế và thiếu tiếp cận dịch vụ">Khó khăn kinh tế và thiếu tiếp cận dịch vụ</option>
+                    <option value="Ảnh hưởng của thiên tai và biến đổi khí hậu">Ảnh hưởng của thiên tai và biến đổi khí hậu</option>
+                    <option value="Các chương trình hỗ trợ và sự tham gia của cộng đồng">Các chương trình hỗ trợ và sự tham gia của cộng đồng</option>
+                    <option value="Chênh lệch về sắc tộc và vùng miền">Chênh lệch về sắc tộc và vùng miền</option>
+                </select>
+
+                <label for="details">Chi tiết:</label>
+                <textarea id="details" name="details" rows="4"></textarea>
+
+                <button type="submit">Gửi Báo Cáo</button>
+            </form>
+        </section>
     </div>
-    <script src="javascript/backtop.js"></script>
     <script src="check2.js"></script>
 </body>
 </html>

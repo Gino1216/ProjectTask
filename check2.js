@@ -1,3 +1,4 @@
+// Danh sách mẫu ngắn để demo
 const people = [
     {
         name: "Trần Thị Bích",
@@ -30,10 +31,9 @@ const people = [
     },
 
 
-
 {
         name: " Phạm Văn Đạt ",
-        region: "Miền Trung (Hải Phòng)",
+        region: "Miền Bắc (Hải Phòng)",
         address: " Buôn Ma Thuột, Đắk Lắk ",
         dob: "19/11/1999",
         job: " Lao động tự do ",
@@ -61,15 +61,6 @@ const people = [
         tags: ["Thiếu tiếp cận giáo dục "]
     },
 
-
-
-
-
-
-
-
-
-
 {
         name: " Đỗ Thị Giang ",
         region: "Miền Nam (Cần Thơ)",
@@ -90,11 +81,6 @@ const people = [
         tags: ["Khó khăn kinh tế và thiếu tiếp cận dịch vụ "]
     },
 
-
-
-
-
-
 {
         name: " Vũ Thị Linh",
         region: "Miền Bắc(Quảng Ninh)",
@@ -114,13 +100,6 @@ const people = [
         tags: ["Khó khăn kinh tế và thiếu tiếp cận dịch vụ"]
     },
 
-
-
-
-
-
-
-
 {
         name: " Lê Thị Kim Ngân ",
         region: "Miền Bắc(Hải Phòng)",
@@ -139,13 +118,6 @@ const people = [
         description: "Xâm hại tình dục trẻ em là một vấn đề cần phải được đưa ra ánh sáng. Nhiều trẻ em bị xâm hại nhưng không dám lên tiếng vì sợ hãi hoặc xấu hổ. Ở Đà Nẵng, các tổ chức xã hội đã có những bước tiến trong việc cung cấp dịch vụ tư vấn tâm lý và pháp lý cho các nạn nhân, nhưng chúng ta cần nhiều hơn nữa. Tôi mong rằng sẽ có thêm nhiều chiến dịch giáo dục cộng đồng để nâng cao nhận thức, giúp trẻ em và phụ huynh hiểu rõ về các quyền của mình và không sợ hãi khi lên tiếng tố giác",
         tags: ["Xâm hại tình dục trẻ em"]
     },
-
-
-
-
-
-
-
 
 {
         name: " Đặng Thị My ",
@@ -167,12 +139,6 @@ const people = [
         tags: ["Chênh lệch về sắc tộc và vùng miền"]
     },
 
-
-
-
-
-
-
 {
         name: " Dương Thị Oanh",
         region: "Miền Trung (Phú Yên)",
@@ -183,8 +149,6 @@ const people = [
         tags: ["Thiếu tiếp cận chăm sóc y tế"]
     },
 
-
-
 {
         name: " Nguyễn Văn Phong ",
         region: "Miền Nam (Bình Dương)",
@@ -194,10 +158,6 @@ const people = [
         description: "Tôi từng làm việc ở một nhà máy nơi có rất nhiều trẻ em phải đi làm cùng cha mẹ vì gia đình quá khó khăn. Điều này không chỉ khiến các em không được học hành đầy đủ mà còn phải chịu đựng các điều kiện làm việc nguy hiểm. Chính phủ cần có những biện pháp nghiêm ngặt để ngăn chặn việc sử dụng lao động trẻ em trong các nhà máy, và đồng thời hỗ trợ tài chính cho các gia đình khó khăn để các em có thể tập trung vào việc học",
         tags: ["Khó khăn kinh tế và thiếu tiếp cận dịch vụ"]
     },
-
-
-
-
 
 {
         name: " Đỗ Thị Quỳnh ",
@@ -221,13 +181,16 @@ const people = [
 
 ];
 
+
+/// Hàm hiển thị danh sách người
 function displayPeople(personList) {
     const personContainer = document.getElementById("person-list");
     personContainer.innerHTML = ""; // Xóa nội dung cũ
+
     personList.forEach(person => {
         const personCard = document.createElement("div");
         personCard.className = "person-card";
-        
+
         const tags = person.tags.map(tag => `<span class="tags">${tag}</span>`).join(" ");
         
         personCard.innerHTML = `
@@ -241,38 +204,32 @@ function displayPeople(personList) {
             <p class="person-description">${person.description}</p>
             <div>${tags}</div>
         `;
+
         personCard.setAttribute("data-region", person.region);
         personCard.setAttribute("data-tags", person.tags.join(","));
         personContainer.appendChild(personCard);
     });
 }
 
+// Lọc theo vùng miền
 function filterByRegion(region) {
     const personCards = document.querySelectorAll(".person-card");
     personCards.forEach(card => {
         const cardRegion = card.getAttribute("data-region");
-        // Sử dụng kiểm tra bao gồm thay vì kiểm tra hoàn toàn khớp
-        if (region === "all" || cardRegion.includes(region)) {
-            card.style.display = "block";
-        } else {
-            card.style.display = "none";
-        }
+        card.style.display = (region === "all" || cardRegion.includes(region)) ? "block" : "none";
     });
 }
 
+// Lọc theo vấn đề
 function filterByIssue(issue) {
     const personCards = document.querySelectorAll(".person-card");
     personCards.forEach(card => {
         const cardTags = card.getAttribute("data-tags");
-        if (issue === "all" || cardTags.includes(issue)) {
-            card.style.display = "block";
-        } else {
-            card.style.display = "none";
-        }
+        card.style.display = (issue === "all" || cardTags.includes(issue)) ? "block" : "none";
     });
 }
 
-// Hàm hiển thị tất cả các phần tử
+// Hiển thị tất cả người dùng
 function showAll() {
     const personCards = document.querySelectorAll(".person-card");
     personCards.forEach(card => {
@@ -280,18 +237,100 @@ function showAll() {
     });
 }
 
+// Ẩn tất cả người dùng
+function hideAll() {
+    const personCards = document.querySelectorAll(".person-card");
+    personCards.forEach(card => {
+        card.style.display = "none";
+    });
+}
+
+// Sự kiện cho bộ lọc vùng miền
 document.getElementById("region-select").addEventListener("change", (e) => {
     filterByRegion(e.target.value);
 });
 
+// Sự kiện cho bộ lọc vấn đề
 document.getElementById("issue-select").addEventListener("change", (e) => {
     filterByIssue(e.target.value);
 });
 
-// Gắn sự kiện cho nút "Hiện tất cả"
+// Sự kiện cho nút "Hiện Tất Cả"
 document.getElementById("show-all-btn").addEventListener("click", showAll);
 
-// Hiển thị tất cả người khi tải trang
+// Sự kiện cho nút "Ẩn Tất Cả"
+document.getElementById("hide-all-btn").addEventListener("click", hideAll);
+
+// Sự kiện cho nút "Gửi Ý Kiến" để hiển thị hoặc ẩn khung báo cáo
+document.getElementById("submit-opinion-btn").addEventListener("click", function () {
+    const reportSection = document.querySelector(".report-section");
+    reportSection.style.display = reportSection.style.display === "none" ? "block" : "none";
+});
+
+// Sự kiện khi gửi biểu mẫu báo cáo
+document.getElementById("report-form").addEventListener("submit", function(event) {
+    event.preventDefault(); 
+
+    // Lấy dữ liệu từ biểu mẫu
+    const name = document.getElementById("name").value;
+    const region = document.getElementById("region").value;
+    const address = document.getElementById("address").value;
+    const dob = document.getElementById("dob").value;
+    const job = document.getElementById("job").value;
+    const issue = document.getElementById("issue").value;
+    const details = document.getElementById("details").value;
+
+    // Kiểm tra từng trường và hiển thị cảnh báo nếu cần
+    if (!name) {
+        alert("Vui lòng nhập tên.");
+        return;
+    }
+    if (!region) {
+        alert("Vui lòng chọn vùng miền.");
+        return;
+    }
+    if (!address) {
+        alert("Vui lòng nhập địa chỉ.");
+        return;
+    }
+    if (!dob) {
+        alert("Vui lòng nhập ngày sinh.");
+        return;
+    }
+    if (!job) {
+        alert("Vui lòng nhập công việc.");
+        return;
+    }
+    if (!issue) {
+        alert("Vui lòng chọn vấn đề.");
+        return;
+    }
+    if (!details) {
+        alert("Vui lòng nhập chi tiết.");
+        return;
+    }
+
+    // Thêm báo cáo vào danh sách nếu mọi trường đã được nhập
+    people.push({
+        name: name,
+        region: region,
+        address: address,
+        dob: dob,
+        job: job,
+        description: details,
+        tags: [issue]
+    });
+
+    // Hiển thị lại danh sách với báo cáo mới
+    displayPeople(people);
+
+    // Hiển thị thông báo xác nhận
+    alert("Thông tin của bạn đã được tiếp nhận");
+
+    // Xóa dữ liệu biểu mẫu và ẩn khung báo cáo
+    document.getElementById("report-form").reset();
+    document.querySelector(".report-section").style.display = "none";
+});
+
+// Hiển thị danh sách người khi tải trang
 displayPeople(people);
-filterByRegion("all");
-filterByIssue("all");
