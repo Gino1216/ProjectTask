@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký / Đăng Nhập</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f9;
+            margin: 0;
+        }
+        .container {
+            width: 100%;
+            max-width: 350px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+            margin: 0 10px;
+        }
+        h2 {
+            margin: 10px 0;
+            color: #333;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"] {
+            width: calc(100% - 20px);
+            padding: 12px 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .action-button {
+            display: inline-block;
+            width: 100%;
+            margin: 10px 0;
+            background-color: #333;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+        .toggle-link {
+            color: #333;
+            cursor: pointer;
+            font-size: 14px;
+            text-decoration: underline;
+            margin-top: 10px;
+            display: inline-block;
+        }
+        .message {
+            color: red;
+            font-size: 14px;
+            margin: 5px 0;
+            display: none;
+        }
+        .hidden {
+            display: none;
+        }
+
+        /* Responsive CSS */
+        @media (max-width: 600px) {
+            .container {
+                width: 90%;
+                padding: 15px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+            input[type="text"],
+            input[type="email"],
+            input[type="password"],
+            input[type="date"] {
+                font-size: 14px;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Form Đăng Ký -->
+        <div id="register-container" class="hidden">
+            <h2>Đăng Ký</h2>
+            <input type="text" id="lastName" placeholder="Họ">
+            <div class="message" id="lastNameError">Bạn chưa nhập Họ</div>
+            
+            <input type="text" id="firstName" placeholder="Tên">
+            <div class="message" id="firstNameError">Bạn chưa nhập Tên</div>
+            
+            <input type="date" id="dob" placeholder="Ngày Sinh">
+            <div class="message" id="dobError">Bạn chưa nhập Ngày Sinh</div>
+            
+            <input type="email" id="email" placeholder="Email">
+            <div class="message" id="emailError">Bạn chưa nhập Email</div>
+            
+            <input type="password" id="password" placeholder="Mật Khẩu">
+            <div class="message" id="passwordError">Bạn chưa nhập Mật Khẩu</div>
+            
+            <input type="password" id="confirmPassword" placeholder="Nhập Lại Mật Khẩu">
+            <div class="message" id="confirmPasswordError">Mật khẩu không khớp</div>
+        </div>
+
+        <!-- Form Đăng Nhập -->
+        <div id="login-container">
+            <h2>Đăng Nhập</h2>
+            <input type="email" id="loginEmail" placeholder="Email">
+            <input type="password" id="loginPassword" placeholder="Mật Khẩu">
+        </div>
+
+        <!-- Nút Hành Động Chính -->
+        <button class="action-button" onclick="handleMainButtonClick()" id="mainButton">Đăng Nhập</button>
+        
+        <!-- Link Chuyển Đổi Giữa Đăng Ký và Đăng Nhập -->
+        <span class="toggle-link" onclick="toggleForm()" id="toggleLink">Đăng Ký Tài Khoản</span>
+    </div>
+
+    <script>
+        let isRegisterForm = false; // Biến để theo dõi trạng thái hiện tại của form
+
+        function toggleForm() {
+            // Chuyển đổi giữa form đăng ký và đăng nhập
+            if (isRegisterForm) {
+                showLoginForm(); // Chuyển sang form đăng nhập
+            } else {
+                showRegisterForm(); // Chuyển sang form đăng ký
+            }
+        }
+
+        function handleMainButtonClick() {
+            // Xử lý hành động dựa trên trạng thái form
+            if (isRegisterForm) {
+                register(); // Kiểm tra và xử lý đăng ký khi ở form đăng ký
+            } else {
+                login(); // Kiểm tra và xử lý đăng nhập khi ở form đăng nhập
+            }
+        }
+
+        function showRegisterForm() {
+            hideErrorMessages(); // Ẩn tất cả thông báo lỗi khi chuyển form
+            document.getElementById('register-container').classList.remove('hidden');
+            document.getElementById('login-container').classList.add('hidden');
+            document.getElementById('mainButton').textContent = "Xác Nhận Đăng Ký";
+            document.getElementById('toggleLink').textContent = "Đăng Nhập";
+            isRegisterForm = true; // Cập nhật trạng thái thành form đăng ký
+        }
+
+        function showLoginForm() {
+            hideErrorMessages(); // Ẩn tất cả thông báo lỗi khi chuyển form
+            document.getElementById('login-container').classList.remove('hidden');
+            document.getElementById('register-container').classList.add('hidden');
+            document.getElementById('mainButton').textContent = "Đăng Nhập";
+            document.getElementById('toggleLink').textContent = "Đăng Ký Tài Khoản";
+            isRegisterForm = false; // Cập nhật trạng thái thành form đăng nhập
+        }
+
+        function showErrorMessage(elementId) {
+            document.getElementById(elementId).style.display = 'block';
+        }
+        
+        function hideErrorMessages() {
+            const errorMessages = document.querySelectorAll('.message');
+            errorMessages.forEach(error => error.style.display = 'none');
+        }
+
+        function register() {
+            hideErrorMessages();
+            
+            const lastName = document.getElementById('lastName').value.trim();
+            const firstName = document.getElementById('firstName').value.trim();
+            const dob = document.getElementById('dob').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const password = document.getElementById('password').value.trim();
+            const confirmPassword = document.getElementById('confirmPassword').value.trim();
+            let isValid = true;
+
+            // Kiểm tra từng trường nhập liệu và hiển thị thông báo lỗi nếu không hợp lệ
+            if (!lastName) {
+                showErrorMessage('lastNameError');
+                isValid = false;
+            }
+            if (!firstName) {
+                showErrorMessage('firstNameError');
+                isValid = false;
+            }
+            if (!dob) {
+                showErrorMessage('dobError');
+                isValid = false;
+            }
+            if (!email) {
+                showErrorMessage('emailError');
+                isValid = false;
+            }
+            if (!password) {
+                showErrorMessage('passwordError');
+                isValid = false;
+            }
+            if (password !== confirmPassword) {
+                showErrorMessage('confirmPasswordError');
+                isValid = false;
+            }
+
+            if (isValid) {
+                alert("Bạn đã đăng ký thành công!");
+                showLoginForm(); // Chuyển sang form đăng nhập sau khi đăng ký thành công
+            }
+        }
+
+        function login() {
+            const email = document.getElementById('loginEmail').value.trim();
+            const password = document.getElementById('loginPassword').value.trim();
+
+            if (email && password) {
+                alert("Bạn đã đăng nhập thành công!");
+            } else {
+                alert("Vui lòng nhập Email và Mật Khẩu.");
+            }
+        }
+    </script>
+
+</body>
+</html>
