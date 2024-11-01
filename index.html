@@ -448,7 +448,14 @@
         <div class="footer-email-form">
           <h2>Tham gia bản tin của chúng tôi</h2>
           <input type="email" placeholder="Enter your email address" id="footer-email" />
-          <input type="Submit" value="Sign up" id="footer-email-btn" />
+          <input type="button" value="Sign up" id="footer-email-btn" onclick="redirectToRegister()" />
+
+          <script>
+            function redirectToRegister() {
+              window.location.href = "formdangky.html"; // Điều hướng đến trang đăng ký
+            }
+          </script>
+
         </div>
       </div>
     </div>
