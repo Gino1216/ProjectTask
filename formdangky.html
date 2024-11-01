@@ -69,7 +69,7 @@
             display: none;
         }
 
-        /* Responsive CSS */
+        
         @media (max-width: 600px) {
             .container {
                 width: 90%;
@@ -120,50 +120,50 @@
             <input type="password" id="loginPassword" placeholder="Mật Khẩu">
         </div>
 
-        <!-- Nút Hành Động Chính -->
+      
         <button class="action-button" onclick="handleMainButtonClick()" id="mainButton">Đăng Nhập</button>
         
-        <!-- Link Chuyển Đổi Giữa Đăng Ký và Đăng Nhập -->
+        
         <span class="toggle-link" onclick="toggleForm()" id="toggleLink">Đăng Ký Tài Khoản</span>
     </div>
 
     <script>
-        let isRegisterForm = false; // Biến để theo dõi trạng thái hiện tại của form
+        let isRegisterForm = false;
 
         function toggleForm() {
-            // Chuyển đổi giữa form đăng ký và đăng nhập
+            
             if (isRegisterForm) {
-                showLoginForm(); // Chuyển sang form đăng nhập
+                showLoginForm(); 
             } else {
-                showRegisterForm(); // Chuyển sang form đăng ký
+                showRegisterForm(); 
             }
         }
 
         function handleMainButtonClick() {
-            // Xử lý hành động dựa trên trạng thái form
+           
             if (isRegisterForm) {
-                register(); // Kiểm tra và xử lý đăng ký khi ở form đăng ký
+                register(); 
             } else {
-                login(); // Kiểm tra và xử lý đăng nhập khi ở form đăng nhập
+                login(); 
             }
         }
 
         function showRegisterForm() {
-            hideErrorMessages(); // Ẩn tất cả thông báo lỗi khi chuyển form
+            hideErrorMessages();
             document.getElementById('register-container').classList.remove('hidden');
             document.getElementById('login-container').classList.add('hidden');
             document.getElementById('mainButton').textContent = "Xác Nhận Đăng Ký";
             document.getElementById('toggleLink').textContent = "Đăng Nhập";
-            isRegisterForm = true; // Cập nhật trạng thái thành form đăng ký
+            isRegisterForm = true; 
         }
 
         function showLoginForm() {
-            hideErrorMessages(); // Ẩn tất cả thông báo lỗi khi chuyển form
+            hideErrorMessages(); 
             document.getElementById('login-container').classList.remove('hidden');
             document.getElementById('register-container').classList.add('hidden');
             document.getElementById('mainButton').textContent = "Đăng Nhập";
             document.getElementById('toggleLink').textContent = "Đăng Ký Tài Khoản";
-            isRegisterForm = false; // Cập nhật trạng thái thành form đăng nhập
+            isRegisterForm = false; 
         }
 
         function showErrorMessage(elementId) {
@@ -186,7 +186,7 @@
             const confirmPassword = document.getElementById('confirmPassword').value.trim();
             let isValid = true;
 
-            // Kiểm tra từng trường nhập liệu và hiển thị thông báo lỗi nếu không hợp lệ
+          
             if (!lastName) {
                 showErrorMessage('lastNameError');
                 isValid = false;
@@ -214,7 +214,7 @@
 
             if (isValid) {
                 alert("Bạn đã đăng ký thành công!");
-                showLoginForm(); // Chuyển sang form đăng nhập sau khi đăng ký thành công
+                showLoginForm(); 
             }
         }
 
