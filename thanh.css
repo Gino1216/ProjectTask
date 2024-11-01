@@ -362,11 +362,17 @@ gap: 20px;
     padding: 15px;
     gap: 15px;
   }
-  .bocucdonate{
+  
+}
+@media (max-width: 1024px) {
+
+  
+  .bocucdonate {
     display: flex;
     flex-direction: column;
   }
 }
+
 
 
  
